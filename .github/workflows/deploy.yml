@@ -26,6 +26,7 @@ jobs:
         run: |
           git config user.name kingpinzs
           git config user.email ${{ secrets.KINGPINZS_EMAIL }}
+          git remote set-url origin https://kingpinzs:${{ secrets.KINGPINZS_PAS }}@github.com/kingpinzs/Developer_Quiz_Site.git
 
       - name: Run Deploy Script
         run: npm run deploy

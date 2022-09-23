@@ -21,6 +21,11 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
+        
+      - name: Configure Git
+        run: |
+          git config user.name kingpinzs
+          git config user.email ${{ secrets.KINGPINZS_EMAIL }}
 
       - name: Run Deploy Script
         run: npm run deploy

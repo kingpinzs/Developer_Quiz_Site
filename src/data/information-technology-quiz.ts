@@ -1,4 +1,4 @@
-const itQuiz = [
+const informationTechnologyQuiz = [
   {
     Question: "What is PRAM?",
     Answer:
@@ -32,6 +32,28 @@ const itQuiz = [
       "RAM (short for Random Access Memory), or the main memory, is a volatile, short-term type of memory that only stores information temporarily while a computer is powered by electricity. It is used when you open and are using an application or file. When the power turns off, any files you created or updates you made and didn't save, will be lost and will be hard to retrieve.",
     Link: "https://www.freecodecamp.org/news/what-is-a-pc-computer-definition-and-computer-basics-for-beginners/",
   },
+  {
+    Question:
+      "Which part of the CPU is responsible for carrying out mathematical operations?",
+    Answer: "The Arithmetic Logic Unit",
+    Distractor1: "The Control Unit",
+    Distractor2: "Registers",
+    Distractor3: "Cache Memory",
+    Explanation:
+      "The ALU (short for Arithmetic Logic Unit), is a digital circuit that performs arithmetic operations such as addition, subtraction, multiplication, and division.",
+    Link: "https://www.freecodecamp.org/news/what-is-cpu-meaning-definition-and-what-cpu-stands-for/",
+  },
+  {
+    Question: "What is a Solid State Drive?",
+    Answer:
+      "A type of storage device that uses flash memory to store and access data",
+    Distractor1: "A device to record text to a disk",
+    Distractor2: "A device to translate code from one language to another ",
+    Distractor3: "A screen editor used for Unix",
+    Explanation:
+      "A type of storage device that uses flash memory to store and access data",
+    Link: "https://www.freecodecamp.org/news/ssd-solid-state-drive-definition/",
+  },
 ];
 
-export default itQuiz;
+export default informationTechnologyQuiz;

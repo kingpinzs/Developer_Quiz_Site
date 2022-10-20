@@ -1,6 +1,17 @@
 const linuxQuiz = [
   {
     
+    Question: "In Linux, which command is used to display all the users logged in to the system?",
+    Answer: "who",
+    Distractor1: "all-users",
+    Distractor2: "show",
+    Distractor3: "whoami",
+    Explanation:
+       "The who command displays the users logged in to the system.",
+    Link: "https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/",
+  },
+  {
+    
     Question: "In Linux, which command is used to remove the writing and executing permissions for 'group' and 'other'?",
     Answer: "chmod go-wx list",
     Distractor1: "chmod go+wx list",
@@ -962,6 +973,15 @@ const linuxQuiz = [
     Explanation:
       "w displays information about the users currently on the machine, and their processes. The header shows, in this order, the current time, how long the system has been running, how many users are currently logged on, and the system load averages for the past 1, 5, and 15 minutes.",
     Link: "https://man7.org/linux/man-pages/man1/w.1.html",
+  },
+  {
+    Question: "In Linux, what does the dmesg command do?",
+    Answer: "shows kernal logs",
+    Distractor1: "shows authentication logs",
+    Distractor2: "shows syslog file",
+    Distractor3: "shows daemon logs",
+    Explanation: "The dmesg command is a Linux utility that shows kernel-related messages that have been taken from the kernel ring buffer.",
+    Link: "https://en.wikipedia.org/wiki/Dmesg",
   },
 ];
 

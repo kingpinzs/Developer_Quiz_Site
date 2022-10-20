@@ -423,10 +423,10 @@ const gitQuiz = [
   {
     Question: "In Git, how do you do a force push?",
     Answer: "git push -f",
-    Distractor1:  "git push -u",
-    Distractor2:  "git push",
-    Distractor3:  "git add fil*",
-    Explanation: 
+    Distractor1: "git push -u",
+    Distractor2: "git push",
+    Distractor3: "git add fil*",
+    Explanation:
       "The git push -f command will force a push request. This is usually fine for pull request branches because nobody else should have cloned them.",
     Link: "https://www.freecodecamp.org/news/git-cheat-sheet/",
   },
@@ -437,7 +437,27 @@ const gitQuiz = [
     Distractor2: "git apply stash",
     Distractor3: "git pull",
     Explanation: "To list multiple stashes that you have created you run git stash list.",
-    Link: "https://www.w3docs.com/learn-git/git-stash.html",
+    Link: "https://git-scm.com/docs/git-stash",
+  },
+  {
+    Question: "How does Git know that changes have been made to a file?",
+    Answer: "Everything is checksummed before it is stored and is referred to by that checksum",
+    Distractor1: "Git takes snapshots of the changes",
+    Distractor2: "Nearly every operation is local",
+    Distractor3: "Git is a Distributed Version Control System",
+    Explanation:
+      "Git has integrity because everything in git is checksummed using SHA-1 mechanism.",
+    Link: "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F#",
+  },
+  {
+    Question: "What is the difference between Git and GitHub?",
+    Answer: "Git is a popular version control system and GitHub is a hosting service for Git repositories.",
+    Distractor1: "GitHub is a type of version control system, while Git is a hosting service for Git repositories.",
+    Distractor2: "Git and GitHub are the same thing",
+    Distractor3: "Git is a version control system only used on Mac computers while GitHub is a version control system only used on Windows.",
+    Explanation:
+      "Git is a version control system for managing the source and history of code and GitHub is a hosting service for Git repositories.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-git-and-github/",
   },
   {
     Question: "In Git, how do you apply a stash if you have multiple?",
@@ -445,17 +465,17 @@ const gitQuiz = [
     Distractor1: "git stash pop",
     Distractor2: "git stash apply",
     Distractor3: "git commit",
-    Explanation: "To apply a stash when you have multiple stashes you use git stash pop stash@{x} where x is the number in the list of stash.",
-    Link: "https://www.w3docs.com/learn-git/git-stash.html",
+    Explanation: "To apply a stash when you have multiple stashes, you use git stash pop stash@{x} where x is the number in the list of stash.",
+    Link: "https://git-scm.com/docs/git-stash",
   },
   {
-    Question: "In Git, how do you see a summary of a single stash?",
+    Question: "In Git, how do you see a summary for a single stash?",
     Answer: "git stash show",
     Distractor1: "git stash view",
     Distractor2: "git stash diff",
     Distractor3: "git stash summary",
-    Explanation: "To view a summary of a single stash you use git stash show which shows a summary of file changes.",
-    Link: "https://www.w3docs.com/learn-git/git-stash.html",
+    Explanation: "To view a summary for a single stash, you use git stash show which shows a summary of file changes.",
+    Link: "https://git-scm.com/docs/git-stash",
   },
   {
     Question: "In Git, how do you create a branch from your stash?",
@@ -463,8 +483,8 @@ const gitQuiz = [
     Distractor1: "git checkout -b branch_name stash",
     Distractor2: "git -b branch_name stash@{x}",
     Distractor3: "git branch_name stash@{x}",
-    Explanation: "To create a branch from a stash you use git stash branch the_branch_name stash@{x} where x is the number in the list of stash.",
-    Link: "https://www.w3docs.com/learn-git/git-stash.html",
+    Explanation: "To create a branch from a stash, you use git stash branch the_branch_name stash@{x} where x is the number in the list of stash.",
+    Link: "https://git-scm.com/docs/git-stash",
   },
   {
     Question: "In Git, how do you delete all the stashes?",
@@ -472,8 +492,8 @@ const gitQuiz = [
     Distractor1: "git stash delete",
     Distractor2: "git stash remove",
     Distractor3: "git stash drop",
-    Explanation: "To remove all stashes you use git stash clear which will delete ALL stashes.",
-    Link: "https://www.w3docs.com/learn-git/git-stash.html",
+    Explanation: "To remove all stashes, you use git stash clear which will delete ALL stashes.",
+    Link: "https://git-scm.com/docs/git-stash",
   },
   {
     Question: "In Git, how do you delete a single stash?",
@@ -481,8 +501,8 @@ const gitQuiz = [
     Distractor1: "git stash delete stash@{x}",
     Distractor2: "git stash remove stash@{x}",
     Distractor3: "git drop stash@{x}",
-    Explanation: "To delete a SINGLE stash you use git stash drop stash@{x} where x is the number in the list of stash.",
-    Link: "https://www.w3docs.com/learn-git/git-stash.html",
+    Explanation: "To delete a SINGLE stash, you use git stash drop stash@{x} where x is the number in the list of stash.",
+    Link: "https://git-scm.com/docs/git-stash",
   },
 ];
 

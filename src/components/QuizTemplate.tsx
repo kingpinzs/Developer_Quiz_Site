@@ -1,22 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SelectQuiz from "./SelectQuiz";
 
-import agileQuiz from "../data/agile-quiz";
-import cssQuiz from "../data/css-quiz";
-import cppQuiz from "../data/cpp-quiz";
-import dockerQuiz from "../data/docker-quiz";
-import freecodecampQuiz from "../data/freecodecamp-quiz";
-import generalCSQuiz from "../data/general-cs-quiz";
-import gitQuiz from "../data/git-quiz";
-import htmlQuiz from "../data/html-quiz";
-import informationTechnologyQuiz from "../data/information-technology-quiz";
-import javascriptQuiz from "../data/javascript-quiz";
-import linuxQuiz from "../data/linux-quiz";
-import networkQuiz from "../data/network-quiz";
-import pythonQuiz from "../data/python-quiz";
-import qualityAssuranceQuiz from "../data/quality-assurance-quiz";
-import securityQuiz from "../data/security-quiz";
-import sqlQuiz from "../data/sql-quiz";
+import { ALL_CATEGORIES } from "../constants";
 
 import Results from "./Results";
 import shuffle from "../shuffle-arr";
@@ -34,10 +19,7 @@ interface QuizProps {
 }
 
 const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
-  const [quiz, setQuiz] = useState([...cppQuiz, ...cssQuiz, ...dockerQuiz, ...freecodecampQuiz, 
-                                    ...generalCSQuiz, ...gitQuiz, ...htmlQuiz, ...informationTechnologyQuiz, 
-                                    ...javascriptQuiz, ...linuxQuiz, ...networkQuiz, ...pythonQuiz, ...sqlQuiz,
-                                    ...agileQuiz, ...qualityAssuranceQuiz, ...securityQuiz]);
+  const [quiz, setQuiz] = useState(ALL_CATEGORIES);
   const [questionNumber, setQuestionNumber] = useState(1);
   const [isResults, setIsResults] = useState(false);
   const [points, setPoints] = useState(0);
@@ -95,10 +77,7 @@ const QuizTemplate: React.FC<QuizProps> = (QuizProps) => {
   };
 
   const resetQuiz = () => {
-    setQuiz([...cppQuiz, ...cssQuiz, ...dockerQuiz, ...freecodecampQuiz, 
-      ...generalCSQuiz, ...gitQuiz, ...htmlQuiz, ...informationTechnologyQuiz, 
-      ...javascriptQuiz, ...linuxQuiz, ...networkQuiz, ...pythonQuiz, ...sqlQuiz,
-      ...agileQuiz, ...qualityAssuranceQuiz, ...securityQuiz]);
+    setQuiz(ALL_CATEGORIES);
     setIsResults(false);
     setShow(false);
     setShowOptions(true);

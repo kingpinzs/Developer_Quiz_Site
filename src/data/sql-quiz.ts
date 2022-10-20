@@ -1,5 +1,172 @@
 const sqlQuiz = [
   {
+    Question: "In SQL, which of the following is the correct syntax for creating a table?",  
+    Answer: "CREATE TABLE table_name (column1_name datatype, ...)",
+    Distractor1: "CREATE TABLE table_name (int main void column_name)",
+    Distractor2: "UPDATE TABLE table_name (column1_name datatype, ...)",
+    Distractor3: "CREATE NEW TABLE table_name (column1_name datatype, ...)",
+    Explanation: "In SQL, tables are created by using the CREATE TABLE statement as well as specifying each columns datatype.",
+    Link: "https://www.freecodecamp.org/news/sql-create-table-statement-with-example-syntax/",
+  },
+  {
+    Question: "In SQL, which command is used to convert from one data type to another?",
+    Answer: "CAST()",
+    Distractor1: "CHANGE()",
+    Distractor2: "TYPE()", 
+    Distractor3: "CONVERT()",
+    Explanation: "The CAST() function is used to convert a column in a table from one data type to another.",  
+    Link: "https://www.freecodecamp.org/news/cast-a-function-in-sql-convert-char-to-int-sql-server-example/",
+  },
+  {
+    Question: "In SQL, which of the following is the correct syntax for inserting a new record(row) into a table?",
+    Answer: "INSERT INTO table_name (column1, ...) VALUES (value1, ...);", 
+    Distractor1: "ADD ROW table_name (column1, ...) VALUES (value1, ...);",
+    Distractor2: "ALTER table_name (value1, ...);",
+    Distractor3: "INSERT INTO table_name (column1, ...);",
+    Explanation: "The INSERT INTO statement is used to add new rows into a table, with the number of values equal to the number of specified columns", 
+    Link: "https://www.freecodecamp.org/news/insert-into-sql-how-to-insert-into-a-table-query-example-statement/",
+  },
+  {
+    Question: "In SQL, what function is used to join two or more strings together to form a single string?",
+    Answer: "CONCAT()",
+    Distractor1: "SUBSTR()",
+    Distractor2: "INSERT()",
+    Distractor3: "JOIN()",
+    Explanation: "The CONCAT() function joins at least two parameters(strings) and can accept a total of 254 parameters.", 
+    Link: "https://www.freecodecamp.org/news/learn-sql-in-10-minutes/",
+  },
+  {
+    Question:
+      "In relational databases, Primary keys cannot contain what type of value?",
+    Answer: "NULL values",
+    Distractor1: "string values",
+    Distractor2: "numeric values",
+    Distractor3: "boolean",
+    Explanation:
+      "Primary keys must contain unique values and cannot contain NULL values.",
+    Link: "https://www.freecodecamp.org/news/primary-key-sql-tutorial-how-to-define-a-primary-key-in-a-database/",
+  },
+  {
+    Question:
+      "In SQL, what is a View?",
+    Answer: "A View is a database object that presents data existing in one or more tables",
+    Distractor1: "A View removes an item from a table",
+    Distractor2: "A View sorts items in a table",
+    Distractor3: "A View does not exist in SQL",
+    Explanation:
+      "A View is a database object that presents data existing in one or more tables",
+    Link: "https://www.freecodecamp.org/news/sql-create-view-mysql/",
+  },
+  {
+    Question:
+      " In relational databases, which of the following allows you to uniquely identify a tuple?",
+    Answer: "Super Key",
+    Distractor1: "Schema",
+    Distractor2: "Attribute",
+    Distractor3: "Domain",
+    Explanation:
+      "Super Key is used to uniquely identify a tuple in a relation.",
+    Link: "https://en.wikipedia.org/wiki/Superkey",
+  },
+  {
+    Question: 
+      "In SQL, how can the user change 'codingWebsite' into 'freeCodeCamp' in the 'Name' column for the Users table?",
+    Answer: "UPDATE Users Set Name='freeCodeCamp' WHERE Name='codingWebsite' ",
+    Distractor1: "MODIFY Users Set Name = 'codingWebsite' WHERE Name = 'freeCodeCamp' ",
+    Distractor2: "UPDATE Users Set Name = 'codingWebsite' WHERE Name = 'freeCodeCamp' ",
+    Distractor3: "MODIFY Users Set Name = 'freeCodeCamp' WHERE Name = 'codingWebsite' ",
+    Explanation:
+      "The UPDATE command and WHERE clause are used together to change the name in a SQL table.",
+    Link: "https://www.freecodecamp.org/news/sql-update-statement-update-query-in-sql/",
+    
+  },
+  {
+    Question:
+      "In MySQL, what is the maximum string length for the VARCHAR data type?",
+    Answer: "Up to 65,535 bytes",
+    Distractor1: "255 bytes",
+    Distractor2: "256 bytes",
+    Distractor3: "Up to 65,567 bytes",
+    Explanation:
+      "The VARCHAR data type has a maximum string length range from 0 to 65535.",
+    Link: "https://www.freecodecamp.org/news/learn-sql-in-10-minutes/",
+  },
+  {
+    Question:
+      "Which command is used in a 'WHERE' or 'HAVING' clause to limit the selected rows to the items when a column has a certain pattern of characters contained in it?",
+    Answer: "LIKE",
+    Distractor1: "NOT",
+    Distractor2: "INSERT",
+    Distractor3: "JOIN",
+    Explanation:
+      "You can place NOT before LIKE to exclude the rows with the string pattern instead of selecting them.",
+    Link: "https://www.freecodecamp.org/news/basic-sql-commands/",
+  },
+  {
+    Question: "How do you limit query results in ORACLE-SQL?",
+    Answer: "FETCH FIRST",
+    Distractor1: "LIMIT",
+    Distractor2: "TOP",
+    Distractor3: "FIRST",
+    Explanation:
+      "You can use FETCH FIRST, in newer versions of Oracle, to restrict the number of rows returned by a query.",
+    Link: "https://www.freecodecamp.org/news/row_number-in-sql-select-top-example-in-sql-and-sql-server2/",
+  },
+  {
+    Question: "In a RDBMS, what is used to create a reference between tables?",
+    Answer: "Foreign Keys",
+    Distractor1: "Candidate Keys ",
+    Distractor2: "Alternate Keys",
+    Distractor3: "Composite Keys",
+    Explanation:
+      "A foreign key is used to link two tables by making reference to another table's primary key.",
+    Link: "https://www.freecodecamp.org/news/what-is-a-relational-database-rdbms-definition/",
+  },
+  {
+    Question:
+      "Which of the following MySQL commands shows the structure of a table?",
+    Answer: "DESCRIBE table_name;",
+    Distractor1: "SHOW table_name;",
+    Distractor2: "EXPLAIN table_name;",
+    Distractor3: "INFO table_name;",
+    Explanation:
+      "In MYSQL, the DESCRIBE command followed by the table name is used to show the structure of a table",
+    Link: "https://www.freecodecamp.org/news/learn-sql-queries-database-query-tutorial-for-beginners/",
+  },
+  {
+    Question:
+      "In SQL, how do you select every row in a given table named 'freecodecamp'?",
+    Answer: "SELECT * FROM freecodecamp",
+    Distractor1: "SELECT all FROM freecodecamp;",
+    Distractor2: "FROM freecodecamp SELECT all;",
+    Distractor3: "FROM freecodecamp SELECT *;",
+    Explanation:
+      "In SQl, SELECT is used to select data from a database. The * is a wildcard character that matches any column in the table. The FROM clause specifies the table to select from.",
+    Link: "https://www.freecodecamp.org/news/learn-sql-queries-database-query-tutorial-for-beginners/",
+  },
+  {
+    Question:
+      "In SQL, what keyword is used to count unique values that are NOT NULL and not duplicates?",
+    Answer: "DISTINCT",
+    Distractor1: "GROUP BY",
+    Distractor2: "COUNT",
+    Distractor3: "WHERE",
+    Explanation:
+      "In SQL, the DISTINCT keyword will only count unique values that are NOT NULL. The computer will ignore any duplicate values.",
+    Link: "https://www.freecodecamp.org/news/sql-distinct-statement-how-to-query-select-and-count/",
+  },
+  {
+    Question:
+      "In SQL, what keyword is used if the WHERE clause fails when being used with aggregate functions?",
+    Answer: "HAVING",
+    Distractor1: "ADD",
+    Distractor2: "DISTINTC",
+    Distractor3: "LIMIT",
+    Explanation:
+      "In SQL, you will have to use the HAVING clause because the WHERE clause fails when used with aggregate functions.",
+    Link: "https://www.freecodecamp.org/news/sql-having-how-to-group-and-count-with-a-having-statement/",
+  },
+  {
     Question:
       "Which of the following relational database management systems (RDBMS) should never be used to store data in a production app?",
     Answer: "Microsoft Access",
@@ -322,6 +489,157 @@ const sqlQuiz = [
     Distractor3: "VALIDATE",
     Explanation:
       "The CHECK constraint is used to limit the range of values that can be placed in a column.",
+    Link: "https://www.freecodecamp.org/news/basic-sql-commands/",
+  },
+  {
+    Question: "In SQL, what is the command used to delete a table?",
+    Answer: "DROP TABLE table_name",
+    Distractor1: "REMOVE TABLE table_name",
+    Distractor2: "DELETE TABLE table_name",
+    Distractor3: "ALTER TABLE table_name",
+    Explanation: "The DROP TABLE command is used to delete an entire table.",
+    Link: "https://www.freecodecamp.org/news/learn-sql-queries-database-query-tutorial-for-beginners/",
+  },
+  {
+    Question:
+      "In SQL, what is the command used to give a record a date and time value from the system on execution?",
+    Answer: "NOW()",
+    Distractor1: "TIMESTAMP()",
+    Distractor2: "Y-M-D()",
+    Distractor3: "DATETIME()",
+    Explanation:
+      "The NOW() function gives the selected record a value of the current timestamp",
+    Link: "https://www.freecodecamp.org/news/sql-date-functions-getdate/",
+  },
+  {
+    Question: "In SQL, where can we access all column names within a database?",
+    Answer: "INFORMATION_SCHEMA.COLUMNS",
+    Distractor1: "COLUMNS",
+    Distractor2: "SCHEMA.COLUMNS",
+    Distractor3: "SCHEMA.INFO.COLS",
+    Explanation:
+      "You can select from INFORMATION_SCHEMA.COLUMNS and combine with a WHERE clause when needing to identify where a certain column is stored.",
+    Link: "https://www.freecodecamp.org/news/learn-sql-queries-database-query-tutorial-for-beginners/",
+  },
+  {
+    Question:
+      "In SQL, what statement should you use to undo a GRANT statement?",
+    Answer: "REVOKE",
+    Distractor1: "UNDO",
+    Distractor2: "DELETE",
+    Distractor3: "ROLLBACK",
+    Explanation:
+      "The REVOKE statement can be used to undo the action of a GRANT statement.",
+    Link: "https://dev.mysql.com/doc/refman/5.6/en/revoke.html",
+  },
+  {
+    Question:
+      "In SQL, which command erases all the updates made from the start of the transaction?",
+    Answer: "ROLLBACK",
+    Distractor1: "COMMIT",
+    Distractor2: "DELETE",
+    Distractor3: "REVOKE",
+    Explanation:
+      "The ROLLBACK TRANSACTION command will erase all modifications made to the data. Changes made to table and local variables will not be affected by this command.",
+    Link: "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/rollback-transaction-transact-sql?view=sql-server-ver16",
+  },
+  {
+    Question:
+      "Which of the following is not a distinct relationship in a SQL database?",
+    Answer: "All-to-one",
+    Distractor1: "One-to-one",
+    Distractor2: "One-to-many",
+    Distractor3: "Many-to-many",
+    Explanation:
+      "Database data can either be linked by one-to-one, one-to-many, or many-to-many relationships.",
+    Link: "https://www.freecodecamp.org/news/relational-vs-nonrelational-databases-difference-between-sql-db-and-nosql-db/",
+  },
+  {
+    Question:
+      "In SQL, what does DDL stand for ",
+    Answer: "Data Definition Language",
+    Distractor1:  "Data distinct Language",
+    Distractor2:  "Data Decoded Language",
+    Distractor3:  "Data Developer Language",
+    Explanation:
+      "Some of the Data Definition Language commands include CREATE, ALTER, DROP, and TRUNCATE.",
+    Link: "https://www.freecodecamp.org/news/dbms-and-sql-basics/",
+  },
+  {
+    Question:
+      "In SQL, which function rounds a number to a specified number of decimal places?",
+    Answer: "ROUND()",
+    Distractor1: "TRUNCATE()",
+    Distractor2: "CEIL()",
+    Distractor3: "FLOOR()",
+    Explanation:
+      "The ROUND() function takes in two parameters(number and decimals) and rounds the number to the number of decimals specified in the 2nd parameter.",
+    Link: "https://dev.mysql.com/doc/refman/5.7/en/precision-math-rounding.html",
+  },
+  {
+    Question:
+      "In SQL, which data type is used to store a string with up to 255 characters?",
+    Answer: "TINYTEXT",
+    Distractor1: "STRING",
+    Distractor2: "BLOB",
+    Distractor3: "BINARY",
+    Explanation:
+      "TINYTEXT can store up to 255 bytes and can be used for text like captions or summaries.",
+    Link: "https://www.freecodecamp.org/news/learn-sql-in-10-minutes/",
+  },
+  {
+    Question:
+      "In SQL, what does TCL stand for?",
+    Answer: " Transaction Control Language",
+    Distractor1: "Transaction controlling Language",
+    Distractor2: "Transacted Control Language",
+    Distractor3: "Transaction Console Language",
+    Explanation:
+      "Some of the Transaction Control Language commands include COMMIT, ROLLBACK, and SAVE TRANSACTION.",
+    Link: "https://www.freecodecamp.org/news/dbms-and-sql-basics/",
+  },
+  {
+    Question:
+      "In SQL, which of the following is an approach for joining tables?",
+    Answer:"All of the mentioned",
+    Distractor1:"Subqueries",
+    Distractor2:"Union Join",
+    Distractor3:"Natural Join",
+    Explanation:
+        "In SQL, you can use a subquery, union join or natural join to join multiple tables together.",
+     Link:"https://www.freecodecamp.org/news/dbms-and-sql-basics/",
+  },
+  {
+    Question:
+      "In SQL, what is the name of the join that will return matched and unmatched values from a table?",
+    Answer:"Outer join",
+    Distractor1:"All of the Mentioned",
+    Distractor2:"Equi-join",
+    Distractor3:"Natural Join",
+    Explanation:
+        "OUTER JOIN is used to return matched and unmatched values from a table.",
+     Link:"https://www.freecodecamp.org/news/dbms-and-sql-basics/",
+  },
+  {
+    Question:
+      "In SQL, what is the name for an organized collection of data kept in a central location?",
+    Answer: "Database",
+    Distractor1: "Table",
+    Distractor2: "Excel",
+    Distractor3: "csv",
+    Explanation:
+      "A database is a curated collection of structured data that is kept in one location.",
+    Link: "https://www.freecodecamp.org/news/sql-and-databases-full-course/",
+  },
+  {
+    Question:
+      "In MySQL, which of the following queries can be used to rename the table BaseCamp to BaseCamp_New?",
+    Answer: "ALTER TABLE BaseCamp RENAME TO BaseCamp_New ;",
+    Distractor1: "ALTER TABLE BaseCamp TO BaseCamp_New ;",
+    Distractor2: "ALTER TABLE BaseCamp UPDATE TO BaseCamp_New ;",
+    Distractor3: "ALTER TABLE BaseCamp SET TO BaseCamp_New ;",
+    Explanation:
+      "If you want to rename a table called BaseCamp to BaseCamp_New, then you would use the following syntax in MySQL: ALTER TABLE table_name RENAME TO new_table_name;",
     Link: "https://www.freecodecamp.org/news/basic-sql-commands/",
   },
 ];

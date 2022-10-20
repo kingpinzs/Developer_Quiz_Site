@@ -1,6 +1,27 @@
 const gitQuiz = [
   {
     Question:
+      "In Git, how can you save uncommitted changes on your local machine so you can work on it later?",
+    Answer: "git stash",
+    Distractor1: "git copy into notepad.exe",
+    Distractor2: "git save code",
+    Distractor3: "git clone --for later",
+    Explanation:
+      "Stashes are temporary storage spaces where you can store your code. When you’re done, you can put your code back from the stash using git stash pop. You won’t have to worry about losing any uncommitted changes!",
+    Link: "https://www.freecodecamp.org/news/how-to-use-git-stash-as-temporary-storage-84a0a1e37a43/",
+  },
+  {
+    Question: "In Git, how can you check your configuration?",
+    Answer: "git config -l",
+    Distractor1: "git config -check",
+    Distractor2: "git checkconfig -l",
+    Distractor3: "git checkconfig -m",
+    Explanation:
+      "The command git config -l returns a list of information about your git configuration including user name and email",
+    Link: "https://www.freecodecamp.org/news/git-cheat-sheet/",
+  },
+  {
+    Question:
       "In Git, how do you integrate changes from one branch to another?",
     Answer: "git merge",
     Distractor1: "git copy into",
@@ -301,6 +322,187 @@ const gitQuiz = [
     Explanation:
       "In the command line, you can use git checkout -b new-branch-name to create a new branch and switch to it",
     Link: "https://www.freecodecamp.org/news/git-and-github-for-beginners/",
+  },
+  {
+    Question: "In Git, how do you rename the current branch?",
+    Answer: "git branch -m new-name",
+    Distractor1: "git rename -b new-name",
+    Distractor2: "git change -b new-branch-name",
+    Distractor3: "git branch --rename new-name",
+    Explanation:
+      "In the command line, you can use git branch -m new-name to rename the current branch.",
+    Link: "https://www.freecodecamp.org/news/renaming-a-git-branch-how-to-rename-the-current-branch-in-git/",
+  },
+  {
+    Question:
+      "In Git, which command is used to list differences between your current working directory and your staging area?",
+    Answer: "git diff",
+    Distractor1: "git different",
+    Distractor2: "git status",
+    Distractor3: "git update",
+    Explanation:
+      "In the command line, you can use git diff to show all the differences between your current working directory and your staging area.",
+    Link: "https://www.freecodecamp.org/news/git-diff-command/",
+  },
+  {
+    Question:
+      "In Git, what do you do right after resovling a merge conflict in a file?",
+    Answer: "git add file_that_had_conflict",
+    Distractor1: "git commit",
+    Distractor2: "git status",
+    Distractor3: "git update",
+    Explanation:
+      "In the command line, after resolving the conflict you will need to stage the changes.",
+    Link: "https://www.freecodecamp.org/news/resolve-merge-conflicts-in-git-a-practical-guide/",
+  },
+  {
+    Question: "In Git, what command is used to revert changes?",
+    Answer: "git revert",
+    Distractor1: "git undo",
+    Distractor2: "git stash",
+    Distractor3: "git update",
+    Explanation:
+      "In the command line, to undo unwanted changes you can run git revert with the hash of the commit you want to revert back to.",
+    Link: "https://www.freecodecamp.org/news/10-important-git-commands-that-every-developer-should-know/",
+  },
+  {
+    Question:
+      "In Git, which command is used to reset a branch to a previous commit?",
+    Answer: "git reset",
+    Distractor1: "git revert",
+    Distractor2: "git rebase",
+    Distractor3: "git reflog",
+    Explanation:
+      "The git reset command is used to reset your current HEAD to a specified state.",
+    Link: "https://www.freecodecamp.org/news/the-ultimate-guide-to-git-reset-and-git-revert/",
+  },
+  {
+    Question:
+      "In Git, how do you see your commit history including changes in files?",
+    Answer: "git log -p",
+    Distractor1: "git log --show",
+    Distractor2: "git log -c",
+    Distractor3: "git log",
+    Explanation:
+      "The git log -p command shows the commit's history including all files and their changes.",
+    Link: "https://www.freecodecamp.org/news/git-cheat-sheet/",
+  },
+  {
+    Question:
+      "In Git, which command is used to list all of the remote branches that Git is tracking?",
+    Answer: "git branch -r",
+    Distractor1: "git branch --show -r",
+    Distractor2: "git -b -d",
+    Distractor3: "git branch",
+    Explanation:
+      "The git branch -r command shows the name of all remote branches that Git is tracking for the current repository.",
+    Link: "https://www.freecodecamp.org/news/git-cheat-sheet/",
+  },
+  {
+    Question:
+      "In Git,  which command is used to choose a commit from one branch and apply it to another?",
+    Answer: "git cherry-pick <commit>",
+    Distractor1: "git write-over <commit>",
+    Distractor2: "git goto <commit>",
+    Distractor3: "git merge <commit>",
+    Explanation:
+      "git cherry-pick selects a handpicked commit from one branch and applies it to another branch.",
+    Link: "https://www.freecodecamp.org/news/the-git-cherry-pick-command/",
+  },
+  {
+    Question:
+      "In Git, what is the correct syntax for the git tag command?",
+    Answer: "git tag <tag-name>",
+    Distractor1: "git add-tag <tag-name>",
+    Distractor2: "git tag-add <tag-name>",
+    Distractor3: "git tag-on <commit>",
+    Explanation:
+      "git tags point to a specific part in the Git history and are often used to mark specific version releases in the code.",
+    Link: "https://www.freecodecamp.org/news/git-tag-explained-how-to-add-remove/",
+  },
+  {
+    Question: "In Git, how do you do a force push?",
+    Answer: "git push -f",
+    Distractor1: "git push -u",
+    Distractor2: "git push",
+    Distractor3: "git add fil*",
+    Explanation:
+      "The git push -f command will force a push request. This is usually fine for pull request branches because nobody else should have cloned them.",
+    Link: "https://www.freecodecamp.org/news/git-cheat-sheet/",
+  },
+  {
+    Question: "In Git, how do you list multiple stashes?",
+    Answer: "git stash list",
+    Distractor1: "git list",
+    Distractor2: "git apply stash",
+    Distractor3: "git pull",
+    Explanation: "To list multiple stashes that you have created you run git stash list.",
+    Link: "https://git-scm.com/docs/git-stash",
+  },
+  {
+    Question: "How does Git know that changes have been made to a file?",
+    Answer: "Everything is checksummed before it is stored and is referred to by that checksum",
+    Distractor1: "Git takes snapshots of the changes",
+    Distractor2: "Nearly every operation is local",
+    Distractor3: "Git is a Distributed Version Control System",
+    Explanation:
+      "Git has integrity because everything in git is checksummed using SHA-1 mechanism.",
+    Link: "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F#",
+  },
+  {
+    Question: "What is the difference between Git and GitHub?",
+    Answer: "Git is a popular version control system and GitHub is a hosting service for Git repositories.",
+    Distractor1: "GitHub is a type of version control system, while Git is a hosting service for Git repositories.",
+    Distractor2: "Git and GitHub are the same thing",
+    Distractor3: "Git is a version control system only used on Mac computers while GitHub is a version control system only used on Windows.",
+    Explanation:
+      "Git is a version control system for managing the source and history of code and GitHub is a hosting service for Git repositories.",
+    Link: "https://www.freecodecamp.org/news/introduction-to-git-and-github/",
+  },
+  {
+    Question: "In Git, how do you apply a stash if you have multiple?",
+    Answer: "git stash pop stash@{x}",
+    Distractor1: "git stash pop",
+    Distractor2: "git stash apply",
+    Distractor3: "git commit",
+    Explanation: "To apply a stash when you have multiple stashes, you use git stash pop stash@{x} where x is the number in the list of stash.",
+    Link: "https://git-scm.com/docs/git-stash",
+  },
+  {
+    Question: "In Git, how do you see a summary for a single stash?",
+    Answer: "git stash show",
+    Distractor1: "git stash view",
+    Distractor2: "git stash diff",
+    Distractor3: "git stash summary",
+    Explanation: "To view a summary for a single stash, you use git stash show which shows a summary of file changes.",
+    Link: "https://git-scm.com/docs/git-stash",
+  },
+  {
+    Question: "In Git, how do you create a branch from your stash?",
+    Answer: "git stash branch branch_name stash@{x}",
+    Distractor1: "git checkout -b branch_name stash",
+    Distractor2: "git -b branch_name stash@{x}",
+    Distractor3: "git branch_name stash@{x}",
+    Explanation: "To create a branch from a stash, you use git stash branch the_branch_name stash@{x} where x is the number in the list of stash.",
+    Link: "https://git-scm.com/docs/git-stash",
+  },
+  {
+    Question: "In Git, how do you delete all the stashes?",
+    Answer: "git stash clear",
+    Distractor1: "git stash delete",
+    Distractor2: "git stash remove",
+    Distractor3: "git stash drop",
+    Explanation: "To remove all stashes, you use git stash clear which will delete ALL stashes.",
+    Link: "https://git-scm.com/docs/git-stash",
+  },
+  {
+    Question: "In Git, how do you delete a single stash?",
+    Answer: "git stash drop stash@{x}",
+    Distractor1: "git stash delete stash@{x}",
+    Distractor2: "git stash remove stash@{x}",
+    Distractor3: "git drop stash@{x}",
+    Explanation: "To delete a SINGLE stash, you use git stash drop stash@{x} where x is the number in the list of stash.",
+    Link: "https://git-scm.com/docs/git-stash",
   },
 ];
 

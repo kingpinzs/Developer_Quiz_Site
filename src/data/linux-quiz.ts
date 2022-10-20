@@ -1,5 +1,120 @@
 const linuxQuiz = [
   {
+    
+    Question: "In Linux, which command is used to display all the users logged in to the system?",
+    Answer: "who",
+    Distractor1: "all-users",
+    Distractor2: "show",
+    Distractor3: "whoami",
+    Explanation:
+       "The who command displays the users logged in to the system.",
+    Link: "https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/",
+  },
+  {
+    
+    Question: "In Linux, which command is used to remove the writing and executing permissions for 'group' and 'other'?",
+    Answer: "chmod go-wx list",
+    Distractor1: "chmod go+wx list",
+    Distractor2: "chmod a-wx list",
+    Distractor3: "chmod go+r list",
+    Explanation:
+      "The 'chmod go-wx list' is used to remove the writing and executing permissions for 'group' and 'other' for a file named list.",
+    Link: "https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/",
+  },
+  {
+    
+    Question: "In Linux, which one of the following commands determines file type?",
+    Answer: "file",
+    Distractor1: "kind",
+    Distractor2: "wget",
+    Distractor3: "which",
+    Explanation:
+      "The command 'file' determines file type.",
+    Link: "https://man7.org/linux/man-pages/man1/file.1.html",
+  },
+  {
+    Question: "In Linux, which one of the following commands locates the binary, source, and manual page files for a command?",
+    Answer: "whereis <command>",
+    Distractor1: "locate <command>",
+    Distractor2: "wget <command>",
+    Distractor3: "which <command>",
+    Explanation:
+      "The command 'whereis' locates the binary, source, and manual page files for a command.",
+    Link: "https://man7.org/linux/man-pages/man1/whereis.1.html",
+  },
+  {
+    Question: "In Linux, which one of the following commands lists threads of a process?",
+    Answer: "ps -T -p <PID>",
+    Distractor1: "ps -ef",
+    Distractor2: "top thread <PID>",
+    Distractor3: "show_thread <PID>",
+    Explanation:
+      "The option '-p' selects the process by PID, and the option '-T' is to show threads.",
+    Link: "https://man7.org/linux/man-pages/man1/ps.1.html",
+  },
+  {
+    Question: "In Linux, which one of the following commands concatenates and prints files in reverse?",
+    Answer: "tac",
+    Distractor1: "catr",
+    Distractor2: "cat_reverse",
+    Distractor3: "print_reverse",
+    Explanation:
+      "The command 'tac' prints files in reverse.",
+    Link: "https://man7.org/linux/man-pages/man1/tac.1.html",
+  },
+  {
+    Question: "In Linux, which one of the following commands repeatedly outputs a line with all specified string(s) or just 'y'?",
+    Answer: "yes",
+    Distractor1: "no",
+    Distractor2: "loop",
+    Distractor3: "iterate",
+    Explanation:
+      "The command 'yes' repeatedly outputs a line with all specified string(s), or 'y'.",
+    Link: "https://man7.org/linux/man-pages/man1/yes.1.html",
+  },
+  {
+    Question: "In Linux, which one is not a communication command?",
+    Answer: "grep",
+    Distractor1: "mesg",
+    Distractor2: "mail",
+    Distractor3: "write",
+    Explanation:
+      "The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern.",
+    Link: "https://www.freecodecamp.org/news/grep-command-tutorial-how-to-search-for-a-file-in-linux-and-unix/",
+  },
+  {
+    Question:
+      "Which of the following commands creates a file without opening it?",
+    Answer: "touch <filename>",
+    Distractor1: "nano <filename>",
+    Distractor2: "cat <filename>",
+    Distractor3: "cp <filename>",
+    Explanation:
+      "The touch <filename> command creates a new file without opening it which can be verified using the ls command.",
+    Link: "https://www.freecodecamp.org/news/linux-basics/",
+  },
+  {
+    Question: "In Linux, which command grants every permission to everyone?",
+    Answer: "chmod 777",
+    Distractor1: "chmod 111",
+    Distractor2: "chmod 724",
+    Distractor3: "chmod 666",
+    Explanation:
+      "The command chmod 777 activates all the permission access to owner, group and others by summing 4, 2, 1 on the octal base.",
+    Link: "https://www.freecodecamp.org/news/how-to-change-file-permissions-with-the-chmod-command-on-linux/",
+  },
+  {
+    Question:
+      "In Linux, which command helps in listing all the environment variables?",
+    Answer: "printenv",
+    Distractor1: "lsenv",
+    Distractor2: "listenv",
+    Distractor3: "printvar",
+    Explanation:
+      "The command printenv helps in listing all the environment variables, set either by the system, or by your own shell scripts and configuration.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-printenv-command",
+  },
+  {
     Question: "In Linux, what is a maximum length for a filename?",
     Answer: "255 Bytes",
     Distractor1: "225 Bytes",
@@ -673,6 +788,200 @@ const linuxQuiz = [
     Explanation:
       "Users in Linux have a password assigned. You can change the password using the passwd command.",
     Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/",
+  },
+  {
+    Question:
+      "In Linux, how do you change permissions using the chmod command?",
+    Answer: "chmod permissions filename",
+    Distractor1: "permissions filename chmod",
+    Distractor2: "chmod filename",
+    Distractor3: "chmod permissions",
+    Explanation:
+      "'permissions' can be read, write, execute or a combination of them. 'filename' is the name of the file for which the permissions need to change.",
+    Link: "https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/",
+  },
+  {
+    Question:
+      "In Linux, how do you change user and group ownership simultaneously?",
+    Answer: "chown user:group filename",
+    Distractor1: "chmod user:group filename",
+    Distractor2: "chown user::group filename",
+    Distractor3: "chmod user::group filename",
+    Explanation: "We can use chown to change user and group simultaneously",
+    Link: "https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/",
+  },
+  {
+    Question:
+      "In Linux, what is the correct syntax for changing permissions using absolute mode?",
+    Answer: "chmod 451 file-name",
+    Distractor1: "permissions 451 file-name",
+    Distractor2: "change 451 file-name",
+    Distractor3: "chown 451 file-name",
+    Explanation:
+      "Absolute mode uses numbers to represent permissions and mathematical operators to modify them.",
+    Link: "https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/",
+  },
+  {
+    Question:
+      "In Linux, which command is used to display network status and generate protocol statistics?",
+    Answer: "netstat",
+    Distractor1: "ipconfig",
+    Distractor2: "ifconfig",
+    Distractor3: "netlist",
+    Explanation:
+      "The netstat command can be used to display network connections and various protocol statistics.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/",
+  },
+  {
+    Question: "In Linux, which command can be used to terminate a program?",
+    Answer: "kill",
+    Distractor1: "end",
+    Distractor2: "stop",
+    Distractor3: "finish",
+    Explanation:
+      "The kill command sends a signal which terminates or kills a particular process or group of processes.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-kill-command",
+  },
+  {
+    Question: "In Linux, which command can be used for cron jobs?",
+    Answer: "crontab",
+    Distractor1: "cronaction",
+    Distractor2: "cronset",
+    Distractor3: "cronedit",
+    Explanation:
+      "The crontab command can used to perform various actions on cron jobs.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-crontab-command",
+  },
+  {
+    Question:
+      "In Linux, which command is used to view, modify, delete, and copy partitions on a hard drive?",
+    Answer: "fdisk",
+    Distractor1: "df",
+    Distractor2: "split",
+    Distractor3: "ps",
+    Explanation:
+      "fdisk is used to view, create, delete, change, resize, copy and move partitions on a hard drive.",
+    Link: "https://www.freecodecamp.org/news/how-to-install-arch-linux/",
+  },
+  {
+    Question: "The sudo command stands for ___.",
+    Answer: "superuser do",
+    Distractor1: "su",
+    Distractor2: "superuser does",
+    Distractor3: "super do",
+    Explanation: "The sudo command stands for superuser do.",
+    Link: "https://www.freecodecamp.org/news/the-ultimate-guide-to-linux-creating-a-sudo-user/",
+  },
+  {
+    Question:
+      "In Linux, which one is the correct syntax for renaming a file called abc.txt to pqr.txt?",
+    Answer: "mv abc.txt pqr.txt",
+    Distractor1: "mv pqr.txt abc.txt",
+    Distractor2: "mv -a pqr.txt abc.txt",
+    Distractor3: "mv -all pqr.txt abc.txt",
+    Explanation:
+      "The correct syntax for renaming a file called abc.txt to pqr.txt is mv abc.txt pqr.txt",
+    Link: "https://www.freecodecamp.org/news/rename-file-linux-bash-command/",
+  },
+  {
+    Question:
+      "Which Linux command is used to go up one level to a parent folder?",
+    Answer: "cd ..",
+    Distractor1: "cd",
+    Distractor2: "cd/",
+    Distractor3: "chdir",
+    Explanation:
+      ".. is a special path used to indicate the parent folder. cd .. is used to go up one level to a parent folder.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-pwd-command",
+  },
+  {
+    Question: "What does Vim stand for?",
+    Answer: "Vi Improved",
+    Distractor1: "Vi IMitation",
+    Distractor2: "Vi Manual",
+    Distractor3: "Vi Moolenaar",
+    Explanation:
+      "Vim stands for Vi IMproved and it is a popular open-source text editor.",
+    Link: "https://www.freecodecamp.org/news/learn-vim-beginners-tutorial/",
+  },
+  {
+    Question: "Which Linux desktop environment has a similar UI to Windows?",
+    Answer: "KDE Plasma",
+    Distractor1: "GNOME",
+    Distractor2: "Xfce",
+    Distractor3: "Mate",
+    Explanation:
+      "KDE is a popular desktop environment which resembles the Windows user interface.",
+    Link: "https://www.freecodecamp.org/news/linux-basics/",
+  },
+  {
+    Question:
+      "Which set among the following is the correct set of three types of Linux file users?",
+    Answer: "{user, group, other}",
+    Distractor1: "{whoami, users, group}",
+    Distractor2: "{whoami, user, others}",
+    Distractor3: "{user, group, all}",
+    Explanation:
+      "In Linux, there are three types of users: user, group and other.",
+  },
+  {
+    Question: "Which of the following is NOT a category of file permissions in Linux?",
+    Answer: "compile",
+    Distractor1: "execute",
+    Distractor2: "write",
+    Distractor3: "read",
+    Explanation:
+      "In Linux, file permissions fall into three categories: read, write and execute.",
+    Link: "https://www.freecodecamp.org/news/linux-chmod-chown-change-file-permissions/",
+  },
+  {
+    Question: "In Linux, which command is used to find files/folders matching a particular search pattern?",
+    Answer: "find",
+    Distractor1: "who",
+    Distractor2: "which",
+    Distractor3: "search",
+    Explanation:
+      "The find command can be used to find files or folders matching a particular search pattern. It searches recursively.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/",
+  },
+  {
+    Question: "Which of the following Linux commands calculates the total number of lines, words, and characters in a file?",
+    Answer: "wc",
+    Distractor1: "wordcount",
+    Distractor2: "wordc",
+    Distractor3: "lc",
+    Explanation:
+      "The wc command calculates the total number of lines, words, and characters in a file.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/",
+  },
+  {
+    Question: "In Linux, which command is used to show a user a list of groups they belong to?",
+    Answer: "groups",
+    Distractor1: "showgroup",
+    Distractor2: "members",
+    Distractor3: "groupadd",
+    Explanation:
+      "The groups command is used to show a user a list of groups for which they belong to. Primary and secondary are the two types of groups in Linux.",
+    Link: "https://www.freecodecamp.org/news/learn-the-basics-of-the-linux-operating-system/",
+  },
+  {
+    Question: "Which Linux commands can be used to show who is logged on and what they are doing?",
+    Answer: "w",
+    Distractor1: "top",
+    Distractor2: "whoami",
+    Distractor3: "which user",
+    Explanation:
+      "w displays information about the users currently on the machine, and their processes. The header shows, in this order, the current time, how long the system has been running, how many users are currently logged on, and the system load averages for the past 1, 5, and 15 minutes.",
+    Link: "https://man7.org/linux/man-pages/man1/w.1.html",
+  },
+  {
+    Question: "In Linux, what does the dmesg command do?",
+    Answer: "shows kernal logs",
+    Distractor1: "shows authentication logs",
+    Distractor2: "shows syslog file",
+    Distractor3: "shows daemon logs",
+    Explanation: "The dmesg command is a Linux utility that shows kernel-related messages that have been taken from the kernel ring buffer.",
+    Link: "https://en.wikipedia.org/wiki/Dmesg",
   },
 ];
 

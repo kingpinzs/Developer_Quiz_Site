@@ -11,9 +11,17 @@ In the command line:
 
 1. Clone the repo by typing `git clone https://github.com/YOUR-GITHUB-USERNAME/Developer_Quiz_Site.git`
 2. Then type `cd Developer_Quiz_Site` to go into the project's directory.
-3. Install dependencies with `npm install`
-4. Run the project with `npm start`
-5. Have fun 🚀
+3. Ensure Node.js and NPM are installed on machine
+4. Install dependecies with `npm install`
+5. Test local changes:
+    - Option A: NPM
+      1. Run the project with `npm start`
+    - Option B: Docker
+      1. Ensure docker is installed on machine. Installations instructions can be found on the [official Docker docs](https://docs.docker.com/get-docker/).
+      2. Build the docker image with `docker build -t developer-quiz-site .`
+      3. Run the docker container: `docker container run --rm -it -p 3000:3000 developer-quiz-site` or alternatively, `npm run start:local-docker`.
+      4. Visit `localhost:3000` in a browser to view the site!
+6. Have fun 🚀
 
 ## Guidelines for adding quiz questions
 
@@ -28,7 +36,10 @@ We are looking to add more quiz questions for the following categories:
 - Agile
 - Security
 
-All of the quiz questions can be added to this [quiz file](./src/data/full-quiz.ts). Before you add any quiz questions, please check to make sure that it does not already exist in the file. If your quiz question does not exist, then add it to the top of the [quiz file](./src/data/full-quiz.ts).
+The quiz question categories can be found in the `data` folder.
+https://github.com/freeCodeCamp/Developer_Quiz_Site/tree/main/src/data
+
+Before you add any quiz questions, please check to make sure that it does not already exist in the file.
 
 All questions follow this format:
 
@@ -60,7 +71,7 @@ You can read more about how to create timestamps in this [helpful article](https
 7. Open up a pull request (PR) directed to our `main` branch.
 8. Then the maintainers will review your PR and either request changes or approve it.
 
-If you need any help, please reach out on the [freeCodeCamp discord channel](https://discord.com/invite/KVUmVXA).
+If you need any help, please reach out on the [freeCodeCamp forum](https://forum.freecodecamp.org/).
 
 ## How to propose new features
 

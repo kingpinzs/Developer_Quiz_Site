@@ -1,5 +1,129 @@
 const htmlQuiz = [
   {
+    Question:
+     "In HTML, which tag is used to insert a favicon?",
+    Answer: "<link>",
+    Distractor1: "<fav>",
+    Distractor2: "<favicon>",
+    Distractor3: "<icon>",
+    Explanation:
+     "The link tag is used to add a favicon to a website.",
+    Link:
+     "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
+  },
+  {
+    Question:
+    "Which of the following is the correct way of creating an anchor element in HTML?",
+    Answer: "<a href= 'www.freecodecamp.org'> freeCodeCamp </a>",
+    Distractor1: "<a>www.freecodecamp.org <freeCodeCamp /a>",
+    Distractor2: "<a href='www.freecodecamp.org' freeCodeCamp /a>",
+    Distractor3: "<a link='www.freecodecamp.org' freeCodeCamp > </a>",
+    Explanation:
+      "In HTML, an anchor element is used to create links on a a web page. Here is the correct syntax: <a href= 'www.freecodecamp.org'> freeCodeCamp </a>",
+    Link:
+      "https://www.freecodecamp.org/news/the-html-a-tag-anchor-tag-example-code/",
+  },
+  {
+    Question:
+    "What is meant by an empty tag in HTML?",
+    Answer: "An empty tag doesn't require a closing tag",
+    Distractor1: "There is no such concept of empty tag in HTML",
+    Distractor2: "An empty tag cannot having any content within it",
+    Distractor3: "None of these",
+    Explanation:
+      "In HTML, empty tags are those tags that don’t require a closing tag.",
+    Link:
+      "https://www.freecodecamp.org/news/empty-and-blank-53b9e96151cd/"
+  },
+  {
+    Question:
+    "Which HTML element is used to link to a 3rd party JavaScript library and make it available on your page?",
+    Answer: "<script>",
+    Distractor1: "<input>",
+    Distractor2: "<head>",
+    Distractor3: "<html>",
+    Explanation:
+      "You can use the <script> element to link to an external 3rd party JavaScript library and connect to its API functionality.",
+    Link:
+      "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Third_party_APIs"
+  },
+  {
+    Question: "How many Section Heading elements are there in HTML5?",
+    Answer: "6",
+    Distractor1: "4",
+    Distractor2: "8",
+    Distractor3: "1",
+    Explanation:
+      "There are 6 Section Heading elements in HTML5.",
+    Link: "https://youtu.be/kUMe1FH4CHE?t=1219",
+  },
+  {
+    Question: "What is the font-size of the h1 heading tag?",
+    Answer: "2em",
+    Distractor1: "3em",
+    Distractor2: "3.4em",
+    Distractor3: "2.7em",
+    Explanation:
+      "The font-size of h1 element is 2em by default",
+    Link: "https://www.freecodecamp.org/news/how-to-change-text-size-in-html/",
+  },
+  {
+    Question: "How is the document type initialized in HTML5?",
+    Answer: "<!DOCTYPE HTML>",
+    Distractor1: "</DOCTYPE HTML>",
+    Distractor2: "</DOCTYPE>",
+    Distractor3: "<!HTML>",
+    Explanation:
+      "<!DOCTYPE HTML> is the DOCTYPE declaration for HTML5.",
+    Link: "https://www.freecodecamp.org/news/html5-tags-you-might-not-know/",
+  },
+  {
+    Question:
+      "In HTML, what is the difference between the <div> and the <span> tag?",
+    Answer:
+      "<div> is used where a generic block-level tag is needed, while <span> is used where a generic inline tag is needed.",
+    Distractor1:
+      "<div> is used where a generic inline tag is needed, while <span> is used where a generic block-level tag is needed.",
+    Distractor2:
+      "<div> is used for minor divisions on a page, while <span> is used to span across a row.",
+    Distractor3:
+      "<div> is the industry standard default tag, but you could use <span> if you prefer.",
+    Explanation:
+      " div is a block-level element, while span is an inline element. Block-level elements start on a new line and take up the full width available (stretches out to the left and right as far as it can). Inline elements sit within surrounding content (does not start on a new line and only takes up as much width as necessary).",
+    Link: "https://www.freecodecamp.org/news/span-vs-div-html-tags-what-is-the-difference/",
+  },
+  {
+    Question: "In HTML, what is the default method for form submission?",
+    Answer: "GET",
+    Distractor1: "POST",
+    Distractor2: "PUT",
+    Distractor3: "SUBMIT",
+    Explanation:
+      "If a method attribute is not used in the form, it is automatically assumed that the user wants to use the GET method, because it's the default method.",
+    Link: "https://www.freecodecamp.org/news/html-form-input-type-and-submit-button-example/",
+  },
+  {
+    Question:
+      "In HTML, which of the following choices is not a legal type attribute for the <input> tag?",
+    Answer: "<input type='num'>",
+    Distractor1: "<input type='week'>",
+    Distractor2: "<input type='tel'>",
+    Distractor3: "<input type='color'>",
+    Explanation:
+      "The <input> tag is used to create an input field in an HTML form. The type attribute specifies the type of input field to display. type='num' is not a valid attribute for the input tag.",
+    Link: "https://www.freecodecamp.org/news/text-box-in-html-the-input-field-html-tag/",
+  },
+  {
+    Question: "In HTML, what is the primary purpose of the <canvas> tag?",
+    Answer: "It allows drawing on a bitmap via JavaScript.",
+    Distractor1: "It displays annotated images.",
+    Distractor2: "It allows vector images to be rendered on the webpage.",
+    Distractor3: "It allows raster images to be rendered on the webpage.",
+    Explanation:
+      "The <canvas> tag is used to draw graphics on a webpage using JavaScript. It is a container for graphics, and does not actually render anything itself.",
+    Link: "https://www.freecodecamp.org/news/full-overview-of-the-html-canvas-6354216fba8d/",
+  },
+  {
     Question: "In HTML, what is the <address> tag?",
     Answer: "a section to place address information",
     Distractor1: "a place for links",
@@ -89,7 +213,7 @@ const htmlQuiz = [
     Distractor2: "<s>",
     Distractor3: "<i>",
     Explanation:
-      "The <span> tag is used to target specific inline content such as text. This is helpful when you want to style only certains parts of the text.",
+      "The <span> tag is used to target specific inline content such as text. This is helpful when you want to style only certain parts of the text.",
     Link: "https://www.freecodecamp.org/news/span-html-how-to-use-the-span-tag-with-css/",
   },
   {
@@ -1514,6 +1638,17 @@ const htmlQuiz = [
     Explanation:
       "The <i> tag is used to make text italic without adding extra emphasis. It is commonly used for text that is set off from normal prose, like foreign words or thoughts. ",
     Link: "https://devdocs.io/html/element/i",
+  },
+  {
+    Question:
+      "In HTML, what does the iframe element do?",
+    Answer: "embed another document within the current HTML document ",
+    Distractor1: "used for creating a hyperlink",
+    Distractor2: "used to italicize text",
+    Distractor3: "a tag used for preformatted sections of text",
+    Explanation:
+      "The HTML iframe element is used to embed another document within the current HTML document. It is commonly used for advertisements, web analytics and other forms of interactive content.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
   },
 ];
 export default htmlQuiz;

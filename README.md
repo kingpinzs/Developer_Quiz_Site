@@ -4,7 +4,7 @@
 
 The [developerquiz.org](https://developerquiz.org/) website is the companion to [Learn to Code RPG Game](https://freecodecamp.itch.io/learn-to-code-rpg), a visual novel game developed by [freeCodeCamp](https://www.freecodecamp.org) to help you learn how to code. 😺
 
-[developerquiz.org](https://developerquiz.org/) hosts all **600+** multiple choice questions featured in the game on the following topics:
+[developerquiz.org](https://developerquiz.org/) hosts all **700+** multiple choice questions featured in the game on the following topics:
 
 - HTML 🖊️
 - CSS 🎨
@@ -14,6 +14,9 @@ The [developerquiz.org](https://developerquiz.org/) website is the companion to 
 - Git 📁
 - SQL 📊
 - IT 🖥️
+- Quality Assurance ✅
+- Agile ⏩
+- Security 🔒
 - and Computer Science Concepts 🤖
 
 All questions are beginner friendly and approachable to all levels, so they are ideal for refreshing your programming knowledge.
@@ -45,7 +48,7 @@ This open source project is a work in progress and ever evolving.
 
 We welcome all contributions, suggestions and ideas for improvement from the community.
 
-You can contribute by fixing bugs in the codebase, proposing new features or adding new questions to the [quiz file](https://github.com/freeCodeCamp/Developer_Quiz_Site/blob/main/src/data/full-quiz.ts).
+You can contribute by fixing bugs in the codebase, proposing new features or adding new questions.
 
 Make sure to first read through the [Code of Conduct](https://www.freecodecamp.org/news/code-of-conduct/).
 

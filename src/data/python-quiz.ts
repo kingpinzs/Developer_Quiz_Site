@@ -1,5 +1,330 @@
 const pythonQuiz = [
   {
+    Question: 
+      "In Python, which of the following is the correct syntax for a key-value pair in a dictionary?",
+    Answer: "key1: value1",
+    Distractor1: "5j",
+    Distractor2: "'key'",
+    Distractor3: "'count'",
+    Explanation: 
+      "A Python dictionary is a sequence of key-value pairs separated by commas. Here is the correct syntax: key1: value1.",
+    Link: "https://www.freecodecamp.org/news/python-dictionary-methods-dictionaries-in-python/",
+  },
+  {
+    Question: 
+      "In Python, what is the output for this code: print(len('Hello world!'))?",
+    Answer: "12",
+    Distractor1: "11",
+    Distractor2: "10",
+    Distractor3: "13",
+    Explanation: 
+      "The len function returns all characters within a string. Every single character(and space) in Hello world! would result in a length of 12.",
+    Link: "https://www.freecodecamp.org/news/print-statement-in-python-how-to-print-with-example-syntax-command/",
+  },
+  {
+    Question: 
+      "In Python, what are anonymous functions called?",
+    Answer: "Lambda function",
+    Distractor1: "Type function",
+    Distractor2: "beta functions",
+    Distractor3: "Sorted Function",
+    Explanation: 
+      "Lambda functions are anonymous functions that can contain only one expression.",
+    Link: "https://www.freecodecamp.org/news/lambda-function-in-python-example-syntax/",
+  },
+  {
+    Question: 
+      "In Python, which operator is used to perform Bitwise XOR operations?",
+    Answer: "^",
+    Distractor1:  "~",
+    Distractor2:  "|",
+    Distractor3:  "&",
+    Explanation: 
+      "The ^ operator is used in Python to perform Bitwise NOT operations.",
+    Link: "https://www.freecodecamp.org/news/basic-operators-in-python-with-examples/",
+  },
+  {
+    Question: 
+      "In Python, if organization='freeCodeCamp', then what is the result here: print(type(organization))?",
+    Answer: "<class 'str'>",
+    Distractor1: "<class 'char'>",
+    Distractor2: "<class 'var'>",
+    Distractor3: "error",
+    Explanation: 
+      "Python's type() method returns the class type for the object.",
+    Link: "https://www.freecodecamp.org/news/python-print-type-of-variable-how-to-get-var-type/",
+   },
+   {
+    Question: 
+      "In Python, if we have list=['rahul', 'monica', 'george', 'ross', 'george', 'ross'], then what is the result here: print(len(set(list))-len(list))?",
+    Answer: "-2",
+    Distractor1: "2",
+    Distractor2: "0",
+    Distractor3: "6",
+    Explanation: 
+      "Lists can have duplicate items while Sets only contain unique items.",
+    Link: "https://www.freecodecamp.org/news/python-set-operations-explained-with-examples/",
+   },
+   {
+    Question: 
+      "In Python, if we have word ='free' and phrase='code camp', then what is the result here: print(word + phrase)?",
+    Answer: "free code camp",
+    Distractor1: "free camp code",
+    Distractor2: "free + code camp",
+    Distractor3: "code camp free",
+    Explanation: 
+      "To concatenate two strings, you can use the + operator.",
+    Link: "https://www.freecodecamp.org/news/python-concatenate-strings-how-to-combine-and-append-strings-in-python/",
+  },
+  {
+    Question: 
+      "In Python, which operator is used to perform Bitwise NOT operations?",
+    Answer: "~",
+    Distractor1: "++",
+    Distractor2: "!",
+    Distractor3: "--",
+    Explanation: 
+      "The ~ operator is used in Python to perform Bitwise NOT operations.",
+    Link: "https://www.freecodecamp.org/news/basic-operators-in-python-with-examples/",
+  },
+  {
+    Question: 
+      "In Python, which operator is used to perform Bitwise OR operations?",
+    Answer: "|",
+    Distractor1: ">>>",
+    Distractor2: "<<<",
+    Distractor3: "x",
+    Explanation: 
+      "The | operator is used in Python to perform Bitwise OR operations.",
+    Link: "https://www.freecodecamp.org/news/basic-operators-in-python-with-examples/",
+  },
+  {
+    Question: 
+      "In Python, which operator is used to perform Bitwise AND operations?",
+    Answer: "&",
+    Distractor1: "{{",
+    Distractor2: "&&",
+    Distractor3: "<",
+    Explanation: 
+      "The & operator is used in Python to perform Bitwise AND operations.",
+    Link: "https://www.freecodecamp.org/news/basic-operators-in-python-with-examples/",
+  },
+  {
+    Question: 
+      "In Python, which method is used to count the set bits in an integer?",
+    Answer: "int.bit_count()",
+    Distractor1: "float.bit_count()",
+    Distractor2: "double.bit_count()",
+    Distractor3: "int.count()",
+    Explanation: 
+      "int.bit_count() is used to count set bits in an integer",
+    Link: "https://docs.python.org/3/library/stdtypes.html?highlight=tim%20sort#int.bit_count",
+  },
+  {
+    Question: 
+      "In Python, which module supports regular expressions?",
+    Answer: "re",
+    Distractor1: "regex",
+    Distractor2: "pyregex",
+    Distractor3: "pythonre",
+    Explanation: 
+      "The Python re module provides regular expression support.",
+    Link: "https://docs.python.org/3/library/re.html",
+  },
+  {
+    Question: 
+      "In Python, what keyword is used to raise exceptions?",
+    Answer: "raise",
+    Distractor1: "try",
+    Distractor2: "goto",
+    Distractor3: "except",
+    Explanation: 
+      "The raise keyword is used in Python to throw exceptions.",
+    Link: "https://www.freecodecamp.org/news/exception-handling-python/",
+  },
+  {
+      Question: 
+        "In Python, which one is the correct way to get the last item for the following list: numbers = [1, 2, 3, 4, 5]?",
+      Answer: "All of the above",
+      Distractor1: "numbers[-1]",
+      Distractor2: "numbers[len(numbers)-1]",
+      Distractor3: "numbers.pop()",
+      Explanation: 
+        "If you use negative indexing or the pop() method it will return the last item in the numbers list.",
+      Link: "https://www.freecodecamp.org/news/python-get-last-element-in-list-how-to-select-the-last-item/",
+  },
+  {
+    Question: 
+      "In Python, which of the following is not a complex number?",
+    Answer: "2 + 3l",
+    Distractor1: "2 + 3j",
+    Distractor2: "complex(2, 3)",
+    Distractor3: "2 + 3J",
+    Explanation: 
+      "In Python, the letter 'l' (or L) stands for long and 2 + 3l would not result in a complex number.",
+    Link: "https://forum.freecodecamp.org/t/an-introduction-to-python-complex-numbers-explained-with-examples/19218",
+  },
+  {
+      Question: 
+        "In Python, which of the following list methods directly modifies the original list?",
+      Answer: "sort()",
+      Distractor1: "sorted()",
+      Distractor2: "reversed()",
+      Distractor3: "None of the above",
+      Explanation: 
+        "sort() and reverse() directly modify the original list, while sorted() and reversed() return a copy of the original list.",
+      Link: "https://www.freecodecamp.org/news/python-sort-how-to-sort-a-list-in-python/",
+  },
+  {
+    Question:
+      "In Python, which of the following options will reverse this string: sentence='freeCodeCamp rules'?",
+    Answer: "sentence[::-1]",
+    Distractor1: "reversed(sentence)",
+    Distractor2: "sentence.reverse()",
+    Distractor3: "sentence.sort(reverse=True)",
+    Explanation:
+      "In Python, [::-1] will return a reversed copy of the string.",
+    Link: "https://www.freecodecamp.org/news/python-reverse-string-string-reversal-in-python-explained-with-code-examples/",
+  },
+  {
+    Question: 
+      "In Python, which module provides a framework for writing line-oriented command interpreters?",
+    Answer: "cmd",
+    Distractor1: "sys",
+    Distractor2: "os",
+    Distractor3: "io",
+    Explanation: 
+      "The cmd module makes it easier to use a series of commands within command-line interfaces (CLI)",
+    Link: "https://docs.python.org/3/library/cmd.html",
+  },
+  {
+    Question: 
+      "In Python, which module provides a way of using operating system dependent functionality?",
+    Answer: "os",
+    Distractor1: "sys",
+    Distractor2: "builtins",
+    Distractor3: "io",
+    Explanation: 
+      "The Python os module is a set of functions used within the operating system. Some of these functions include fetching directory contents or creating new directories.",
+    Link: "https://docs.python.org/3/library/os.html",
+  },
+  {
+    Question: 
+      "In Python, which module is used to capture command-line arguments given at a file's runtime ?",
+    Answer: "sys",
+    Distractor1: "os",
+    Distractor2: "collections",
+    Distractor3: "itertools",
+    Explanation: 
+      "We can use sys.argv to get a list of command line arguments.",
+    Link: "https://docs.python.org/3/library/sys.html#sys.argv",
+  },
+  {
+    Question: "What will be the output of following code 2//4?",
+    Answer: "0",
+    Distractor1: "0.5",
+    Distractor2: "0",
+    Distractor3: "2",
+    Explanation:
+      "The division of operands where the result is the quotient in which the digits after the decimal point are removed",
+    Link: "https://www.freecodecamp.org/news/what-does-double-slash-mean-in-python/",
+  },
+  {
+    Question: "In Python 3, which function is used to accept input from the user?",
+    Answer: "input()",
+    Distractor1: "inputing()",
+    Distractor2: "raw_input()",
+    Distractor3: "string()",
+    Explanation:
+      "To take input from the user we use the input() function",
+    Link: "https://forum.freecodecamp.org/t/a-guide-to-the-python-input-function/19192",
+  },
+  {
+    Question:
+      "In Python, what does a class's __init__() method do?",
+    Answer: "It is a method that acts as a constructor and is called automatically whenever a new object is created from a class. It sets the initial state of a new object.",
+    Distractor1: "It initializes any imports you may have included at the top of your file.",
+    Distractor2: "It is included to preserve backwards compatibility issues.",
+    Distractor3: "It is a method that acts as a destructor and is called automatically whenever an object is destroyed.",
+    Explanation:
+      " __init__() is a special method that is called whenever a new object is instantiated from a class. It is used to initialize the attributes of the class.",
+    Link: "https://www.freecodecamp.org/news/object-oriented-programming-in-python/",
+  },
+  {
+    Question:
+      "In Python, which of the following is NOT a parameter of the sorted() method?",
+    Answer: "iloc",
+    Distractor1: "key",
+    Distractor2: "iterable",
+    Distractor3: "reverse",
+    Explanation:
+      "The sorted() method can accept up to 3 parameters which are iterable, key and reverse",
+    Link: "https://www.freecodecamp.org/news/sort-dictionary-by-value-in-python/",
+  },
+  {
+    Question:"In Python, which of the following is not an attribute of the datetime.now() function?",
+    Answer: "week",
+    Distractor1: "month",
+    Distractor2: "day",
+    Distractor3: "year",
+    Explanation:
+      "The attributes of the datetime.now() function are year, month, day, hour, minute, second and microsecond",
+    Link: "https://www.freecodecamp.org/news/python-datetime-now-how-to-get-todays-date-and-time/",
+  },
+  {
+    Question:
+      "What is the output of the following Python code: print((10, 20, 30, 40, 50, 60, 70, 80)[2:5])?",
+    Answer: "(30, 40, 50)",
+    Distractor1: "(10, 30 ,40, 50)",
+    Distractor2: "(30, 40, 50)",
+    Distractor3: "(10, 20, 30)",
+    Explanation:
+      "To get a sub tuple out of the Tuple, we need to specify the range of indexes. We need to specify where to start and where to end the range.",
+    Link: "https://forum.freecodecamp.org/t/the-ultimate-guide-to-python-tuples-python-data-structure-tutorial-with-code-examples/19165",
+  },
+  {
+    Question:
+      "What is the output of the following Tuple Operation in Python: print((100,) * 2)?",
+    Answer: "(100,100)",
+    Distractor1: "(200)",
+    Distractor2: "(100)",
+    Distractor3: "(100,100)",
+    Explanation:
+      "We can use * operator to repeat the tuple values n number of times.",
+    Link: "https://forum.freecodecamp.org/t/the-ultimate-guide-to-python-tuples-python-data-structure-tutorial-with-code-examples/19165",
+  },
+  {
+    Question: "In Python, which of the following outputs 'camp'?",
+    Answer: "print('freecodecamp'[-4:])",
+    Distractor1: "print('freecodecamp'[8::-1])",
+    Distractor2: "print('freecodecamp'[8:11])",
+    Distractor3: "print('freecodecamp'[-4:10])",
+    Explanation:
+      "Here we use the negative index to start slicing at the 4th index from the end of the string.",
+    Link: "https://www.freecodecamp.org/news/python-substring-how-to-slice-a-string/#how-to-get-the-last-n-characters-of-a-string-in-python",
+  },
+  {
+    Question:
+      "In Python, which Type casting method lets users convert a specific data type into a required data type?",
+    Answer: "Explicit Type Conversion",
+    Distractor1: "Implicit Type Conversion",
+    Distractor2: "Default Type Conversion",
+    Distractor3: "Widening Type Conversion",
+    Explanation:
+      "In Explicit Type Conversion, users convert the data type of an object to the required data type.",
+    Link: "https://www.freecodecamp.org/news/learn-typecasting-in-python-in-five-minutes-90d42c439743/#explicit-type-conversion",
+  },
+  {
+    Question: "In Python, which one of these is not a Dunder method?",
+    Answer: "__func",
+    Distractor1: "__init__",
+    Distractor2: "__add__",
+    Distractor3: "__len__ ",
+    Explanation:
+      "Dunder methods are names that are preceded and succeeded by double underscores, hence __func method is not a Dunder method.",
+    Link: "https://docs.python.org/3/reference/lexical_analysis.html?highlight=dunder#reserved-classes-of-identifiers",
+  },
+  {
     Question: "In Python, what are the outputs for type(1) and type((1,))?",
     Answer: "<class 'int'>  <class 'tuple'>",
     Distractor1: "<class 'str'> <class 'int'>",
@@ -708,16 +1033,16 @@ const pythonQuiz = [
     Question:
       "In Python, how many spaces are recommended per level of indentation?",
     Answer: "4",
-    Distractor1: "10",
-    Distractor2: "20",
-    Distractor3: "300",
+    Distractor1: "2",
+    Distractor2: "6",
+    Distractor3: "8",
     Explanation:
       "In Python, it is recommended to use 4 spaces per level of indentation.",
     Link: "https://www.python.org/dev/peps/pep-0008/#indentation",
   },
   {
     Question: "In Python, the values of a dictionary can be...",
-    Answer: "Immutable or Mutable",
+    Answer: "Both Mutable and Immutable",
     Distractor1: "only immutable",
     Distractor2: "only mutable",
     Distractor3: "Neither will work",
@@ -908,6 +1233,303 @@ const pythonQuiz = [
     Explanation:
       "In Python, we start a comment with a hash symbol #. A line that starts with this symbol will be interpreted as a comment in a Python program. ",
     Link: "https://forum.freecodecamp.org/t/how-to-comment-your-code-in-python-explained-with-examples/19220",
+  },
+  {
+    Question: "Which type of programming paradigm does Python support?",
+    Answer: "all of the mentioned paradigms",
+    Distractor1: "structured programming",
+    Distractor2: "object-oriented programming",
+    Distractor3: "functional",
+    Explanation:
+      "Python is an interpreted programming language, which supports object-oriented, structured, and functional programming.",
+    Link: "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  },
+  {
+    Question: "In Python, which file is compulsory to create a package?",
+    Answer: "__init__",
+    Distractor1: "__main__",
+    Distractor2: "main.py",
+    Distractor3: "__package__",
+    Explanation:
+      "We cannot create a Python package without adding a __init__.py file, This file will tell Python to treat directories as modules.",
+    Link: "https://www.freecodecamp.org/news/build-your-first-python-package/",
+  },
+  {
+    Question: "What does the partition() function do?",
+    Answer: "Splits the string at the first occurrence and returns a tuple",
+    Distractor1: "Splits the string at the first occurrence and returns a list",
+    Distractor2: "Splits the string equally",
+    Distractor3: "Split the string at any occurrence of the given argument",
+    Explanation:
+      "The partition() method searches for a specified string, and splits the string into a tuple containing three elements.",
+    Link: "https://docs.python.org/3/library/stdtypes.html#str.partition",
+  },
+  {
+    Question: "What is an empty/null statement in Python called?",
+    Answer: "pass",
+    Distractor1: "continue",
+    Distractor2: "over",
+    Distractor3: "goto",
+    Explanation:
+      "An empty statement is a statement that does nothing. Python offers the pass statement as an empty statement.",
+    Link: "https://docs.python.org/3/reference/simple_stmts.html#the-pass-statement",
+  },
+  {
+    Question:
+      "In Python, Function range(4) will yield an iterable sequence like: ",
+    Answer: "[1,2,3,4]",
+    Distractor1: "[0,1,2,3,4]",
+    Distractor2: "[0,1,2,3]",
+    Distractor3: "[4]",
+    Explanation:
+      "If you don't specify the start index, the default start index of 0 is used.",
+    Link: "https://www.freecodecamp.org/news/python-range-function-explained-with-code-examples/",
+  },
+  {
+    Question: "In Python, which function is used to read a single line from a file",
+    Answer: "readline()",
+    Distractor1: "readlines()",
+    Distractor2: "readable()",
+    Distractor3: "read()",
+    Explanation: "readline() function reads a single line from the file and returns the read bytes in the form of a string.",
+    Link: "https://www.freecodecamp.org/news/file-handling-in-python/",
+  },
+  {
+    Question: "In Python, which method is used to convert a list into a string with a suitable delimiter?",
+    Answer: ".join()",
+    Distractor1: ".extend()",
+    Distractor2: ".append()",
+    Distractor3: ".pop()",
+    Explanation: "You can use the .join string method to convert a list into a string",
+    Link: "https://www.freecodecamp.org/news/python-list-to-string-join-example/",
+  },
+  {
+    Question: "In Python, if num_list = ( 1 , 2 , 3 , [ 1 , 2 , 3 ] ), then what is the result of num_list when using the following code here: num_list[3].extend([ 4 , 5 , 6 ])?",
+    Answer: "(1, 2, 3, [1, 2, 3, 4, 5, 6])",
+    Distractor1: "Error",
+    Distractor2: "(1, 2, 3, [ 4, 5, 6])",
+    Distractor3: "(1, 2, 3, [1, 2, 3,],[ 4, 5, 6] ) ",
+    Explanation: "List is mutable in nature so it's size changes",
+    Link: "https://www.freecodecamp.org/news/mutable-vs-immutable-objects-python/",
+  },
+  { 
+    Question: "What is the maximum possible length of an identifier in Python?",
+    Answer: "there is no maximum length", 
+    Distractor1: "79 characters", 
+    Distractor2: "32 characters", 
+    Distractor3: "16 characters", 
+    Explanation: "Identifiers can be of any length.", 
+    Link: "https://www.freecodecamp.org/news/learning-python-from-zero-to-hero-120ea540b567/", 
+  },
+  { 
+    Question: "What arithmetic operators cannot be used with strings in Python?",
+    Answer: "-", 
+    Distractor1: "+", 
+    Distractor2: "/", 
+    Distractor3: "*", 
+    Explanation: "+ is used to concatenate and * is used to multiply strings", 
+    Link: "https://www.freecodecamp.org/news/learn-python-by-thinking-in-types", 
+  },
+  {
+    Question: "In Python, which sorting algorithm is a hybrid between merge and insertion sort?",
+    Answer: "Tim Sort",
+    Distractor1: "Quick Sort",
+    Distractor2: "Merge Sort",
+    Distractor3: "Insertion Sort",
+    Explanation: "Python's default sort uses Tim Sort, which is a combination of both merge sort and insertion sort.",
+    Link: "https://docs.python.org/3/howto/sorting.html"
+  },
+  { 
+    Question: "Which of the following is a package-management system written in Python used to install and manage software packages?",
+    Answer: "pip", 
+    Distractor1: "pypit", 
+    Distractor2: "None of the above", 
+    Distractor3: "piip", 
+    Explanation: "Pip is a standard package manager used to install and manage Python packages", 
+    Link: "https://www.freecodecamp.org/news/how-to-use-pip-install-in-python/", 
+  },
+  { 
+    Question: "In Python, what is the output of print(math.pow(3,4))?",
+    Answer: "81.0", 
+    Distractor1: "43", 
+    Distractor2: "27", 
+    Distractor3: "34", 
+    Explanation: "3 raised to the power of 4 is 81, and by default math.pow() converts both its arguments to type float", 
+    Link: "https://docs.python.org/3/library/math.html#power-and-logarithmic-functions", 
+  },
+  { 
+    Question: "In Python, which of the following is not a tuple method?",
+    Answer: "pop", 
+    Distractor1: "count", 
+    Distractor2: "None of the above", 
+    Distractor3: "index", 
+    Explanation: "There are only two tuple methods; count and index in Python", 
+    Link: "https://docs.python.org/3/tutorial/datastructures.html", 
+  },
+  { 
+    Question: "In Python, what will be the data type of 'John Doe'.split()?",
+    Answer: "List", 
+    Distractor1: "string", 
+    Distractor2: "set", 
+    Distractor3: "tuple", 
+    Explanation: "The result will be ['John', 'Doe'], which has a list data type", 
+    Link: "https://www.freecodecamp.org/news/how-to-split-a-string-in-python/", 
+  },
+  { 
+    Question: "In Python, if my_nums = [8,9,10], which of the following can't be used to reverse the list?",
+    Answer: "reverse(my_nums)", 
+    Distractor1: "my_nums.reverse()", 
+    Distractor2: "None of the above", 
+    Distractor3: "my_nums[::-1]", 
+    Explanation: "reverse isn't a defined Python keyword", 
+    Link: "https://www.freecodecamp.org/news/python-reverse-list-reversing-an-array-in-python/#reversed-function", 
+  },
+  { 
+    Question: "In Python, which built-in function returns all properties and methods of the specified object without the values?",
+    Answer: "dir()", 
+    Distractor1: "obj()", 
+    Distractor2: "dirs()", 
+    Distractor3: "all()", 
+    Explanation: "The dir() function lists all the attributes and methods of a defined object.", 
+    Link: "https://docs.python.org/3/library/functions.html#dir", 
+  },
+  { 
+    Question: "In Python, if num = 1.2345, print('%.2f' %num) will give?",
+    Answer: "1.23", 
+    Distractor1: "1.25", 
+    Distractor2: "12.3", 
+    Distractor3: "1.2", 
+    Explanation: "It rounds the float number to two decimal places", 
+    Link: "https://www.freecodecamp.org/news/2f-in-python-what-does-it-mean/", 
+  },
+  {
+    Question: "How many mandatory arguments does the range() function have in Python?",
+    Answer: "1", 
+    Distractor1: "0", 
+    Distractor2: "2", 
+    Distractor3: "3", 
+    Explanation: "The range() function has one required argument(stop) and two optional arguments(start and step).", 
+    Link: "https://www.freecodecamp.org/news/python-range-function-explained-with-code-examples/", 
+  },
+   { 
+    Question: "Which of the following statements is used to create an empty set in Python?",
+    Answer: "set()", 
+    Distractor1: "{}", 
+    Distractor2: "[]", 
+    Distractor3: "()", 
+    Explanation: "{} creates an empty dictionary while set() creates an empty set.", 
+    Link: "https://www.freecodecamp.org/news/free-python-crash-course/", 
+  },
+  {
+    Question: "In Python, if y = lambda x : x ** 2 + 7 , then what will be the result returned when the following code is executed: print(y(3))?",
+    Answer: "16",
+    Distractor1: "5",
+    Distractor2: "11",
+    Distractor3: "24",
+    Explanation: "A Lambda is an anonymous function that can have any number of arguments but only one expression, which is evaluated and returned.",
+    Link: "https://www.freecodecamp.org/news/lambda-expressions-in-python/",
+  },
+  {
+    Question: "Which Python keyword is added to the open() function while reading a file to ensure the file gets closed?",
+    Answer: "with", 
+    Distractor1: "await",
+    Distractor2: "pass",
+    Distractor3: "finally",
+    Explanation: "Calling the open() function while using the with statement automatically closes a file after being processed.",
+    Link: "https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/",
+  },
+  {
+    Question: "Which one of these Python types is not mutable?",
+    Answer: "bool", 
+    Distractor1: "lists",
+    Distractor2: "sets",
+    Distractor3: "functions",
+    Explanation: "a bool data type cannot change it's value after being created, therefore it is immutable.",
+    Link: "https://www.freecodecamp.org/news/mutable-vs-immutable-objects-python/",
+  },
+  {
+    Question: "In Python, what is the output of the following code: True + True + False - True == 2?",
+    Answer: "False", 
+    Distractor1: "True",
+    Distractor2: "Error",
+    Distractor3: "1",
+    Explanation: "Since booleans in Python are seen as numeric types, you can perform basic math operations on them. True would equate to 1 while False would equate to 0.",
+    Link: "https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/",   
+  },
+  {
+    Question: "In Python, what is the return value: print(list(map(len, ['Welcome', 'To', 'FreeCodeCamp'])))?",
+    Answer: "[7, 2, 12]",
+    Distractor1: "[14, 4, 24]",
+    Distractor2: "21",
+    Distractor3: "<map object at 0x10708b580>",
+    Explanation: "The map function works as an iterator to return a result after applying the len function to every item for the words list and returns a map object.",
+    Link: "https://www.freecodecamp.org/news/python-map-explained-with-examples/",
+  },
+  {
+    Question: "In Python, how do you check the memory usage for Object x?",
+    Answer: "sys.getsizeof(x)", 
+    Distractor1: "size(x)",
+    Distractor2: "len(x)",
+    Distractor3: "os.getsizeof(x)",
+    Explanation: "When you import the sys module and use the the getsizeof() method, Python will calculate how much memory that object has consumed.",
+    Link: "https://www.freecodecamp.org/news/python-programming-tips/",
+  },      
+  {
+    Question: "Which of the following is a good way to input n space separated integers in Python?",
+    Answer: "list(map(int, input().split()))",
+    Distractor1: "input().split()",
+    Distractor2: "int(input())",
+    Distractor3: "list(mapping(int, input().split()))",
+    Explanation: "The map() function is used to apply a function to each item in an iterable (like a Python list or dictionary).",
+    Link: "https://www.freecodecamp.org/news/python-map-explained-with-examples/",
+  },
+  {
+    Question: "Which of the following is the correct syntax to reverse a list in Python?",
+    Answer: "list.reverse()",
+    Distractor1: "list.reverse",
+    Distractor2: "reverse(list)",
+    Distractor3: "list=list.reversing()",
+    Explanation: "The .reverse() method doesn't accept any arguments and doesn't have a return value – it only updates the existing list.",
+    Link: "https://www.freecodecamp.org/news/python-reverse-list-reversing-an-array-in-python/",
+  },
+  {
+    Question: "Which of these is a standard GUI library in Python?",
+    Answer: "Tkinter",
+    Distractor1: "bs4",
+    Distractor2: "Selenium",
+    Distractor3: "Regex",
+    Explanation: "Tkinter provides an object-oriented interface to the Tk GUI toolkit that is built-in to Python.",
+    Link: "https://www.freecodecamp.org/news/learn-how-to-use-tkinter-to-create-guis-in-python/",
+  },
+  {
+    Question: "In Python, what will be the output for the following code: print(round(0.6)-round(-0.6))?",
+    Answer: "2",
+    Distractor1: "0",
+    Distractor2: "1",
+    Distractor3: "-1",
+    Explanation: "In Python, round(0.6) will round up to 1 and round(-0.6) will round down to -1. The result for round(0.6)-round(-0.6) will be 2.",
+    Link: "https://www.freecodecamp.org/news/how-to-round-numbers-up-or-down-in-python/.",
+  },
+  {
+    Question:
+      "In Python, what is the expected output for print({'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}) ?",
+    Answer: "{'orange', 'banana', 'pear', 'apple'}",
+    Distractor1: "{'orange', 'banana', 'pear', 'apple', 'apple', 'orange'}",
+    Distractor2: "{'orange', 'banana', 'pear', 'apple', 'orange', 'apple'}",
+    Distractor3:
+      "{'orange', 'banana', 'pear', 'apple', 'orange', 'apple', 'apple', 'orange'}",
+    Explanation:
+      "print({'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}) would return a set of unordered unique items.",
+    Link: "https://docs.python.org/3/tutorial/datastructures.html#sets",
+  },
+   {
+    Question: "In Python, if x=297.4887 what would the following return: print('%.3f'%x)?",
+    Answer: "297.489",
+    Distractor1: "297.488",
+    Distractor2: "297.49",
+    Distractor3: "297.4885",
+    Explanation: "print('%.3f'%x) would round 297.4887 to 3 decimal places.",
+    Link: "https://www.freecodecamp.org/news/2f-in-python-what-does-it-mean/",
   },
 ];
 

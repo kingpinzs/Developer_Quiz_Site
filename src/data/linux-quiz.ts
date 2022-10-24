@@ -1,13 +1,44 @@
 const linuxQuiz = [
   {
-    Question: "In Linux, which command converts input and uses it as an argument for another command?",
+    Question: "Which command finds memory being used by Linux?",
+    Answer: "All of these",
+    Distractor1: "free-m",
+    Distractor2: "htop",
+    Distractor3: "vmstat",
+    Explanation:
+      "The top command is used to display dynamic real-time information. You can use free-m, htop, top or vmstat to find memory being used by Linux.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-top-command"
+  },
+  {
+    Question: "In Linux, which option is used with the uname command to print the processor architecture name?",
+    Answer: "-p",
+    Distractor1: "-arch",
+    Distractor2: "-ps",
+    Distractor3: "-pname",
+    Explanation:
+        "In Linux, the -p option can be used with the uname command to print the processor architecture name.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-uname-command",
+  },
+  {
+    Question: "In Linux, which option is used with the uname command to print the node network name?",
+    Answer: "-n",
+    Distractor1: "-network",
+    Distractor2: "-node",
+    Distractor3: "-ntwrk",
+    Explanation:
+        "In Linux, the -n option can be used with the uname command to print the node network name.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-uname-command",
+  },
+  {
+    Question:
+      "In Linux, which command converts input and uses it as an argument for another command?",
     Answer: "xargs",
     Distractor1: "convert",
     Distractor2: "stdin",
     Distractor3: "argv",
     Explanation:
-        "The xargs command is used in a UNIX shell to convert input from the standard input and use it as an argument for another command.",
-    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-xargs-command",
+      "The xargs command is used in a UNIX shell to convert input from the standard input and use it as an argument for another command.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-xargs-command"
   },
   {
     Question:
@@ -1028,7 +1059,47 @@ const linuxQuiz = [
     Distractor3: "Code Line Index",
     Explanation: "CLI stands for Command Line Interface",
     Link: "https://en.wikipedia.org/wiki/Command-line_interface"
-  }
+  },
+  {
+    Question: "In Linux, what does the ls -d command do?",
+    Answer: "lists out only the directories themselves,not their contents ",
+    Distractor1: "lists only the files starting with",
+    Distractor2: "lists files and sorts them alphabetically",
+    Distractor3: "show deleted files",
+    Explanation:
+      "In Linux, the -d or --directory option is used to list the directories but not the directory contents.",
+    Link: "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    Question: "In Linux, how do you print the last column of a file named demo.txt?",
+    Answer: "awk '{print $NF}' demo.txt",
+    Distractor1: "awk '{print $0}' demo.txt",
+    Distractor2: "awk '{print $1, $4}' demo.txt",
+    Distractor3: "awk '/^print/' demo.txt",
+    Explanation:
+     "While using the awk command, you can use $NF which represents the last field in a record, to print the last column of a file",
+    Link: "https://www.freecodecamp.org/news/the-linux-awk-command-linux-and-unix-usage-syntax-examples/"
+  },
+  {
+    Question:
+      "In Linux, which command is used to strip directory and suffix from filenames?",
+    Answer: "basename",
+    Distractor1: "dirname",
+    Distractor2: "pwd",
+    Distractor3: "ls",
+    Explanation: "The basename command can be used to print the filename from the given pathname. It will delete any prefix up to the last forward-slash character and return the result.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-basename-command"
+  },
+  {
+    Question:
+      "In Linux, which command is used to display the amount of available free disk space for file systems?",
+    Answer: "df",
+    Distractor1: "du",
+    Distractor2: "free",
+    Distractor3: "top",
+    Explanation: "The df command stands for disk-free and it is used to check the available disk space in Linux.",
+    Link: "https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-df-command"
+  },
 ];
 
 export default linuxQuiz;

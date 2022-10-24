@@ -1,4 +1,14 @@
 const javascriptQuiz = [
+   {
+    Question: "What does the 'debugger' statement in JavaScript do?",
+    Answer: "It acts as a breakpoint in a program",
+    Distractor1: "It will debug errors in the current statement",
+    Distractor2: "It will debug all the errors in the program at runtime",
+    Distractor3: "All of the above",
+    Explanation:
+      "The 'debugger' statement is used to setup the breakup points at probable points of errors in the code snippet, using the debugger window.",
+    Link: "https://www.freecodecamp.org/news/debugging-javascript-for-beginners-5d4ac15dd1cd/#"
+  },
   {
     Question: "What kind of programming can JavaScript be used for?",
     Answer: "Both Client and Server side programming",
@@ -1727,8 +1737,7 @@ const javascriptQuiz = [
     Distractor3: "Gate",
     Explanation:
       "The Window object provides access to all JavaScript capabilities and APIs that are used on the client side.",
-    Link:
-      "https://developer.mozilla.org/en-US/docs/Web/API/Window",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/Window"
   },
   {
     Question:
@@ -1739,20 +1748,18 @@ const javascriptQuiz = [
     Distractor3: "Database",
     Explanation:
       "An HTML <input> element with the type='file' attribute is represented by the Input FileUpload object and is a client-side JavaScript object.",
-    Link:
-      "https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications"
   },
   {
     Question:
-    "In JavaScript, which methods accept an iterable of promises and returns a single array of results?",
-    Answer:"Promise.all() and Promise.allSettled()",
-    Distractor1:"Promise.any() and Promise.all()",
-    Distractor2:"Promise.resolve() and Promise.allSettled()",
-    Distractor3:"Promise.reject() and Promise.reject()",
+      "In JavaScript, which methods accept an iterable of promises and returns a single array of results?",
+    Answer: "Promise.all() and Promise.allSettled()",
+    Distractor1: "Promise.any() and Promise.all()",
+    Distractor2: "Promise.resolve() and Promise.allSettled()",
+    Distractor3: "Promise.reject() and Promise.reject()",
     Explanation:
       "Promise.all() and Promise.allSettled() accept an iterable of promises and return a single array of results.",
-    Link:
-      "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
   },
   {
     Question:
@@ -1765,6 +1772,39 @@ const javascriptQuiz = [
       "The answer is false. Triple equal ('===') compares the value and the type as well.",
     Link: "https://youtu.be/zJSY8tbf_ys?t=24429"
   },
+  {
+    Question:
+      "In JavaScript, which keyword is used to make portions of code accessible to other modules?",
+    Answer: "export",
+    Distractor1: "import",
+    Distractor2: "as",
+    Distractor3: "from",
+    Explanation:
+      "The export keyword is used to make it possible to access small portions of code in other modules.",
+    Link: "https://www.freecodecamp.org/news/javascript-modules-explained-with-examples/#"
+  },
+  {
+    Question:
+      "Which of the following options is a web API that runs code asynchronously in JavaScript?",
+    Answer: "setTimeOut()",
+    Distractor1: "repeat()",
+    Distractor2: "timeOut()",
+    Distractor3: "delay()",
+    Explanation:
+      "The setTimeout() function is an asynchronous function that will not pause execution of other functions in the stack.",
+    Link: "https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/"
+  },
+  {
+    Question:
+      "In JavaScript, the ___________ method returns the index position of the last occurrence of a value in an array.",
+    Answer: "lastIndexOf()",
+    Distractor1: "indexOf()",
+    Distractor2: "charAt(0)",
+    Distractor3: "getPosition()",
+    Explanation:
+      "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+  }
 ];
 
 export default javascriptQuiz;

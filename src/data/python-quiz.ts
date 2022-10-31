@@ -390,15 +390,6 @@ const pythonQuiz = [
     Link: "https://www.freecodecamp.org/news/python-print-variable-how-to-print-a-string-and-variable/"
   },
   {
-    Question: "In Python, what is the new line character?",
-    Answer: "\\n",
-    Distractor1: "\\s",
-    Distractor2: "\\new",
-    Distractor3: "\\m",
-    Explanation: "\\n is the newline character in Python.",
-    Link: "https://www.freecodecamp.org/news/python-new-line-and-how-to-python-print-without-a-newline/"
-  },
-  {
     Question: "In Python, how can you create an empty dictionary?",
     Answer: "{}",
     Distractor1: "[]",
@@ -969,7 +960,7 @@ const pythonQuiz = [
     Distractor2: "Maintainable",
     Distractor3: "Unstoppable",
     Explanation:
-      "Strings are immutable, so we can’t update or remove their characters after they have been defined in the program. ",
+      "Strings are immutable, so we can't update or remove their characters after they have been defined in the program. ",
     Link: "https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/#-data-types-and-built-in-data-structures-in-python"
   },
   {
@@ -1645,7 +1636,15 @@ const pythonQuiz = [
       "Python's built in print() function is used to print messages to the screen.",
     Link: "https://docs.python.org/3/library/functions.html#print"
   },
-
+  {
+    Question: "In Python, which of the following statements is false?",
+    Answer: "Lists in Python are of a fixed size.",
+    Distractor1: "Tuples are an ordered, immutable set of data.",
+    Distractor2: "Dictionaries associate keywords with values.",
+    Distractor3: "Python is an object-oriented language.",
+    Explanation: "In Python, lists are not fixed-size.",
+    Link: "https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/"
+  },
   {
     Question: "In Python, which of the following is NOT a built-in data type?",
     Answer: "class",
@@ -1654,6 +1653,15 @@ const pythonQuiz = [
     Distractor3: "frozenset",
     Explanation: "In Python, a class is a user defined data type.",
     Link: "https://docs.python.org/3/library/datatypes.html"
+   },
+   {
+    Question: "In Python, which of the following is NOT the right way to find 5 raised to the power of 9?",
+    Answer: "print(deg(5,9))",
+    Distractor1: "print(5**9)",
+    Distractor2: "print(pow(5,9))",
+    Distractor3: "print(math.pow(9, 3))",
+    Explanation: "In Python, the '**' operator, the built-in function pow() and the math.pow() function are three different ways to get the exponent to the base.",
+    Link: "https://docs.python.org/3/library/math.html"
   }
 ];
 

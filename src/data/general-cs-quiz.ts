@@ -181,14 +181,14 @@ const generalCSQuiz = [
   },
   {
     Question: "Which of the following is true for a graph?",
-    Answer: "A graph is bipartite if and only if it is two colourable.",
+    Answer: "A graph is bipartite if and only if it is two colorable.",
     Distractor1:
       "A graph is bipartite if and only if it does not contain an even length cycle.",
-    Distractor2: "A graph is bipartite if and only if it is three colourable.",
+    Distractor2: "A graph is bipartite if and only if it is three colorable.",
     Distractor3:
       "A graph is bipartite if and only if it is a directed acyclic graph",
     Explanation:
-      "If a graph is two colourable then the nodes with same colour can be grouped together to form two different groups.",
+      "If a graph is two colorable then the nodes with same color can be grouped together to form two different groups.",
     Link: "https://www.youtube.com/watch?v=09_LlHjoEiY&list=PLWKjhJtqVAbn5emQ3RRG8gEBqkhf_5vxD&t=440s"
   },
   {
@@ -272,7 +272,7 @@ const generalCSQuiz = [
   {
     Question: "Which of the following is the most correct statement?",
     Answer: "Topological sort is possible only for a Directed Acyclic Graph",
-    Distractor1: "Toplogical sort is just an another name for BFS",
+    Distractor1: "Topological sort is just an another name for BFS",
     Distractor2: "All undirected graphs have topological ordering",
     Distractor3: "A cyclic graph also has topological ordering.",
     Explanation:
@@ -1176,7 +1176,7 @@ const generalCSQuiz = [
     Answer: "Abstraction, Encapsulation, Inheritance, and Polymorphism.",
     Distractor1: "Objects, Methods, Properties and Fields.",
     Distractor2: "Immutability, Purity, Transparency and State.",
-    Distractor3: "Declaration, Modeling, Evaluation and Implementaion.",
+    Distractor3: "Declaration, Modeling, Evaluation and Implementation.",
     Explanation:
       "Abstraction, encapsulation, inheritance, and polymorphism are software design principles to help you write clean object-oriented code.",
     Link: "https://www.freecodecamp.org/news/four-pillars-of-object-oriented-programming/"
@@ -1235,7 +1235,7 @@ const generalCSQuiz = [
     Link: "https://www.freecodecamp.org/news/an-intro-to-advanced-sorting-algorithms-merge-quick-radix-sort-in-javascript-b65842194597/"
   },
   {
-    Question: "What is the advanatge of using linked lists over arrays?",
+    Question: "What is the advantage of using linked lists over arrays?",
     Answer: "Linked lists helps in faster insertions and deletions than arrays",
     Distractor1: "Memory usage in linked lists is less than arrays",
     Distractor2: "Reverse traversal is possible in singly linked lists",
@@ -1271,7 +1271,7 @@ const generalCSQuiz = [
       "Which algorithm finds the shortest path between nodes in a graph?",
     Answer: "Dijkstra's Algorithm",
     Distractor1: "Rabin-Karp Algorithm",
-    Distractor2: "Binary Search Algoritm",
+    Distractor2: "Binary Search Algorithm",
     Distractor3: "Quicksort Algorithm",
     Explanation:
       "Dijkstra's Algorithm can find the shortest path from a node (called the 'source node') to all other nodes in the graph, producing a shortest-path tree.",
@@ -1392,6 +1392,16 @@ const generalCSQuiz = [
     Link: "https://www.freecodecamp.org/news/bubble-sort/"
   },
   {
+    Question: "Which HTTP status code returns 'I'm a teapot'?",
+    Answer: "418",
+    Distractor1: "000",
+    Distractor2: "007",
+    Distractor3: "128",
+    Explanation:
+      "HTTP status code 418 returns 'I'm a teapot' and it is a reference to a 1998 April Fools' joke.",
+    Link: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418#"
+  },
+  {
     Question:
       "Which of the following time complexities is considered to be the fastest?",
     Answer: "O(1)",
@@ -1401,6 +1411,27 @@ const generalCSQuiz = [
     Explanation:
       "O(1) is independent of input size so it remains in constant time regardless of the size of the input.",
     Link: "https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/"
+  },
+  {
+    Question: "What is the worst case time complexity for Selection sort?",
+    Answer: "O(n*n)",
+    Distractor1: "O(n*logn)",
+    Distractor2: "O(n^3)",
+    Distractor3: "O(n+k)",
+    Explanation:
+      "Selection sort has a worst case time complexity of O(n*n), due to the two nested loops.",
+    Link: "https://forum.freecodecamp.org/t/the-selection-sort-algorithm-explained-with-examples/16106"
+  },
+  {
+    Question:
+      "Which of the following is a dynamically typed language?",
+    Answer: "Python",
+    Distractor1: "C",
+    Distractor2: "Java",
+    Distractor3: "C++",
+    Explanation:
+      "Statically-typed languages like C, C++, and Java, perform type checking at compile time whereas dynamically-typed languages like Python and JavaScript  perform type checking at runtime.",
+    Link: "https://www.freecodecamp.org/news/why-use-static-types-in-javascript-part-1-8382da1e0adb/#:~:text=series%20is%20about.-,First%2C%20a%20definition,-The%20quickest%20way"
   }
 ];
 
